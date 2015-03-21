@@ -1,0 +1,3 @@
+verilog work "single_alu.v"
+verilog work "display.v"
+verilog work "ALU.v"
