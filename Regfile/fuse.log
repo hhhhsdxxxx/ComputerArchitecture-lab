@@ -1,0 +1,25 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/users/ComputerArchitecture/Regfile/rtype_Test_isim_beh.exe -prj D:/users/ComputerArchitecture/Regfile/rtype_Test_beh.prj work.rtype_Test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/users/ComputerArchitecture/Regfile/single_aluc.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Regfile/single_alu.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Regfile/RegFile.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Regfile/Rtype.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Regfile/rtype_Test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/Regfile/Rtype.v" Line 28: Size mismatch in connection of port <RegWrite>. Formal port size is 1-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module RegFile
+Compiling module single_alu
+Compiling module single_aluc
+Compiling module Rtype
+Compiling module rtype_Test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 6 Verilog Units
+Built simulation executable D:/users/ComputerArchitecture/Regfile/rtype_Test_isim_beh.exe
+Fuse Memory Usage: 26444 KB
+Fuse CPU Usage: 296 ms

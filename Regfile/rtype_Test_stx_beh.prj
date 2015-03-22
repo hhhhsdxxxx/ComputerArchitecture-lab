@@ -1,0 +1,6 @@
+verilog isim_temp "single_aluc.v"
+verilog isim_temp "single_alu.v"
+verilog isim_temp "RegFile.v"
+verilog isim_temp "Rtype.v"
+verilog isim_temp "rtype_Test.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

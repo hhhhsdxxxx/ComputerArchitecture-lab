@@ -1,0 +1,4 @@
+MO single_aluc NULL single_aluc.v vlg4A/single__aluc.bin 1427014025
+MO single_alu NULL single_alu.v vlg7B/single__alu.bin 1427014025
+MO RegFile NULL RegFile.v vlg32/_reg_file.bin 1427014025
+MO Rtype NULL Rtype.v vlg3C/_rtype.bin 1427014025

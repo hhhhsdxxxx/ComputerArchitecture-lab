@@ -1,0 +1,6 @@
+verilog work "single_aluc.v"
+verilog work "single_alu.v"
+verilog work "RegFile.v"
+verilog work "Rtype.v"
+verilog work "rtype_Test.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

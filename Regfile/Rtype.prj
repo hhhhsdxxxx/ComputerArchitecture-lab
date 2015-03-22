@@ -1,0 +1,4 @@
+verilog work "single_aluc.v"
+verilog work "single_alu.v"
+verilog work "RegFile.v"
+verilog work "Rtype.v"

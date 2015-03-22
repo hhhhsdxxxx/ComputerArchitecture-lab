@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/users/ComputerArchitecture/Regfile/rtype_Test_isim_beh.exe" -prj "D:/users/ComputerArchitecture/Regfile/rtype_Test_beh.prj" "work.rtype_Test" "work.glbl" 
