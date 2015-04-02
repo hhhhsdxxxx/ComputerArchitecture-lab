@@ -32,34 +32,23 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Setup/Hold to clock CCLK
-------------+------------+------------+------------+------------+------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
-------------+------------+------------+------------+------------+------------------+--------+
-btn<0>      |    1.104(R)|      SLOW  |    0.162(R)|      SLOW  |CCLK_BUFGP        |   0.000|
-btn<1>      |    1.531(R)|      SLOW  |   -0.247(R)|      SLOW  |CCLK_BUFGP        |   0.000|
-btn<2>      |    1.231(R)|      SLOW  |    0.032(R)|      SLOW  |CCLK_BUFGP        |   0.000|
-btn<3>      |    1.567(R)|      SLOW  |   -0.277(R)|      SLOW  |CCLK_BUFGP        |   0.000|
-------------+------------+------------+------------+------------+------------------+--------+
-
 Clock to Setup on destination clock CCLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CCLK           |   15.225|         |         |         |
+CCLK           |   14.946|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Apr 02 13:35:28 2015 
+Analysis completed Thu Apr 02 17:19:28 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 272 MB
+Peak Memory Usage: 273 MB
 
 
 

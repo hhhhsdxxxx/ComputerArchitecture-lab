@@ -51,17 +51,21 @@ module single_cpu(input wire CCLK, input wire [3:0]btn, output wire [7:0]dig, ou
 	reg [15:0] clk_cnt;
 
 	reg [31:0]num;
+	wire [31:0]num1;
 	wire [3:0]btn_out;
 	reg [1:0]ch;
 	reg [3:0]SW;
 	initial begin
 	clk_cnt <= 0;
 	num <= 0;
-	ch <=2'b11;
+	ch <=2'b00;
 	SW <= 0;
 	end
 	always@(posedge btn_out[2])begin
-	ch <= ch + 1;
+	if(ch == 2'b11)
+		ch <= 0;
+	else
+		ch <= ch + 1;
 	end
 	always@(posedge CCLK)begin
 	case(ch[1:0])
@@ -71,11 +75,12 @@ module single_cpu(input wire CCLK, input wire [3:0]btn, output wire [7:0]dig, ou
 	2'b11:num <= gpr_disp_out;
 	endcase
 	end
-	
+	assign num1 = instr_out;
 	always@(posedge btn_out[3])begin
-		SW <= SW+1;
 		if(SW == 5)
 			SW <= 0;
+		else
+			SW <= SW+1;
 	end
 	
 	always@(posedge btn_out[0] or posedge btn_out[1])begin

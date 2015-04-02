@@ -146,19 +146,22 @@ Parsing module <single_cpu>.
 =========================================================================
 
 Elaborating module <single_cpu>.
-WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 64: Result of 3-bit expression is truncated to fit in 2-bit target.
-WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 76: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 86: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 68: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 78: Assignment to num1 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 83: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 91: Result of 17-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <display>.
 WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\Lab2\top.v" Line 39: Result of 4-bit expression is truncated to fit in 3-bit target.
 WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\Lab2\top.v" Line 53: Signal <data> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <pbtn>.
+WARNING:HDLCompiler:604 - "D:\users\ComputerArchitecture\Lab2\top.v" Line 81: Module instantiation should have an instance name
 
 Elaborating module <clk_10ms>.
-WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 96: Result of 6-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 96: Assignment to o_instr ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\Lab2\top.v" Line 102: Result of 17-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 101: Result of 6-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 101: Assignment to o_instr ignored, since the identifier is never used
 
 Elaborating module <single_pc>.
 
@@ -190,7 +193,7 @@ WARNING:HDLCompiler:1499 - "D:\users\ComputerArchitecture\Lab2\ipcore_dir\c_dat_
 Elaborating module <single_add>.
 
 Elaborating module <single_ctl>.
-WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 116: Assignment to memread ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Line 121: Assignment to memread ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -198,15 +201,15 @@ WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" Lin
 
 Synthesizing Unit <single_cpu>.
     Related source file is "D:\users\ComputerArchitecture\Lab2\single_cpu.v".
-INFO:Xst:3210 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" line 115: Output port <MemRead> of the instance <x_single_ctl> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\users\ComputerArchitecture\Lab2\single_cpu.v" line 120: Output port <MemRead> of the instance <x_single_ctl> is unconnected or connected to loadless signal.
     Found 16-bit register for signal <clk_cnt>.
     Found 32-bit register for signal <num>.
     Found 4-bit register for signal <SW>.
     Found 2-bit register for signal <ch>.
-    Found 2-bit adder for signal <ch[1]_GND_1_o_add_1_OUT> created at line 64.
-    Found 4-bit adder for signal <SW[3]_GND_1_o_add_7_OUT> created at line 76.
-    Found 16-bit adder for signal <clk_cnt[15]_GND_1_o_add_12_OUT> created at line 86.
-    Found 32-bit 4-to-1 multiplexer for signal <ch[1]_gpr_disp_out[31]_wide_mux_4_OUT> created at line 67.
+    Found 2-bit adder for signal <ch[1]_GND_1_o_add_2_OUT> created at line 68.
+    Found 4-bit adder for signal <SW[3]_GND_1_o_add_11_OUT> created at line 83.
+    Found 16-bit adder for signal <clk_cnt[15]_GND_1_o_add_15_OUT> created at line 91.
+    Found 32-bit 4-to-1 multiplexer for signal <ch[1]_gpr_disp_out[31]_wide_mux_6_OUT> created at line 71.
     Summary:
 	inferred   3 Adder/Subtractor(s).
 	inferred  54 D-type flip-flop(s).
@@ -231,24 +234,20 @@ Unit <display> synthesized.
 
 Synthesizing Unit <pbtn>.
     Related source file is "D:\users\ComputerArchitecture\Lab2\top.v".
-    Found 1-bit register for signal <key_reg1>.
-    Found 1-bit register for signal <key_reg2>.
-    Found 1-bit register for signal <key_out>.
-    Found 32-bit register for signal <count>.
-    Found 32-bit adder for signal <count[31]_GND_3_o_add_1_OUT> created at line 83.
+    Found 1-bit register for signal <btn_out>.
+    Found 8-bit register for signal <pbshift>.
     Summary:
-	inferred   1 Adder/Subtractor(s).
-	inferred  35 D-type flip-flop(s).
+	inferred   9 D-type flip-flop(s).
 Unit <pbtn> synthesized.
 
 Synthesizing Unit <clk_10ms>.
     Related source file is "D:\users\ComputerArchitecture\Lab2\top.v".
     Found 1-bit register for signal <oclk>.
-    Found 32-bit register for signal <cnt>.
-    Found 32-bit adder for signal <cnt[31]_GND_4_o_add_1_OUT> created at line 105.
+    Found 16-bit register for signal <cnt>.
+    Found 16-bit adder for signal <cnt[15]_GND_4_o_add_1_OUT> created at line 102.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  33 D-type flip-flop(s).
+	inferred  17 D-type flip-flop(s).
 Unit <clk_10ms> synthesized.
 
 Synthesizing Unit <single_pc>.
@@ -1371,21 +1370,21 @@ Macro Statistics
  16x8-bit single-port Read Only RAM                    : 1
  8x8-bit single-port Read Only RAM                     : 1
 # Adders/Subtractors                                   : 13
- 16-bit adder                                          : 1
+ 16-bit adder                                          : 6
  2-bit adder                                           : 1
  3-bit adder                                           : 1
- 32-bit adder                                          : 7
+ 32-bit adder                                          : 2
  32-bit subtractor                                     : 1
  4-bit adder                                           : 1
  9-bit adder                                           : 1
 # Registers                                            : 214
- 1-bit register                                        : 173
- 16-bit register                                       : 1
+ 1-bit register                                        : 169
+ 16-bit register                                       : 6
  2-bit register                                        : 1
  3-bit register                                        : 1
- 32-bit register                                       : 33
+ 32-bit register                                       : 28
  4-bit register                                        : 2
- 8-bit register                                        : 1
+ 8-bit register                                        : 5
  9-bit register                                        : 2
 # Comparators                                          : 1
  32-bit comparator greater                             : 1
@@ -1440,10 +1439,6 @@ INFO:Xst:3231 - The small RAM <Mram_cnt[2]_GND_2_o_wide_mux_2_OUT> will be imple
     -----------------------------------------------------------------------
 Unit <display> synthesized (advanced).
 
-Synthesizing (advanced) Unit <pbtn>.
-The following registers are absorbed into counter <count>: 1 register on signal <count>.
-Unit <pbtn> synthesized (advanced).
-
 Synthesizing (advanced) Unit <single_cpu>.
 The following registers are absorbed into counter <clk_cnt>: 1 register on signal <clk_cnt>.
 The following registers are absorbed into counter <ch>: 1 register on signal <ch>.
@@ -1462,13 +1457,12 @@ Macro Statistics
  32-bit subtractor                                     : 1
  9-bit adder                                           : 1
 # Counters                                             : 9
- 16-bit up counter                                     : 1
+ 16-bit up counter                                     : 6
  2-bit up counter                                      : 1
  3-bit up counter                                      : 1
- 32-bit up counter                                     : 5
  4-bit up counter                                      : 1
-# Registers                                            : 1099
- Flip-Flops                                            : 1099
+# Registers                                            : 1127
+ Flip-Flops                                            : 1127
 # Comparators                                          : 1
  32-bit comparator greater                             : 1
 # Multiplexers                                         : 50
@@ -1491,6 +1485,8 @@ Optimizing unit <dff> ...
 Optimizing unit <sel> ...
 
 Optimizing unit <single_cpu> ...
+
+Optimizing unit <pbtn> ...
 
 Optimizing unit <single_gpr> ...
 
@@ -1529,38 +1525,23 @@ WARNING:Xst:1293 - FF/Latch <x_single_gpr/mem_0_3> has a constant value of 0 in 
 WARNING:Xst:1293 - FF/Latch <x_single_gpr/mem_0_0> has a constant value of 0 in block <single_cpu>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <x_single_gpr/mem_0_2> has a constant value of 0 in block <single_cpu>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <x_single_gpr/mem_0_1> has a constant value of 0 in block <single_cpu>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <b3/count_10> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_10> <b2/count_10> <b1/count_10> 
-INFO:Xst:2261 - The FF/Latch <b3/count_11> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_11> <b2/count_11> <b1/count_11> 
-INFO:Xst:2261 - The FF/Latch <b3/count_12> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_12> <b2/count_12> <b1/count_12> 
-INFO:Xst:2261 - The FF/Latch <b3/count_13> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_13> <b2/count_13> <b1/count_13> 
-INFO:Xst:2261 - The FF/Latch <b3/count_0> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_0> <b2/count_0> <b1/count_0> 
-INFO:Xst:2261 - The FF/Latch <b3/count_14> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_14> <b2/count_14> <b1/count_14> 
-INFO:Xst:2261 - The FF/Latch <b3/count_1> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_1> <b2/count_1> <b1/count_1> 
-INFO:Xst:2261 - The FF/Latch <b3/count_20> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_20> <b2/count_20> <b1/count_20> 
-INFO:Xst:2261 - The FF/Latch <b3/count_15> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_15> <b2/count_15> <b1/count_15> 
-INFO:Xst:2261 - The FF/Latch <b3/count_2> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_2> <b2/count_2> <b1/count_2> 
-INFO:Xst:2261 - The FF/Latch <b3/count_21> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_21> <b2/count_21> <b1/count_21> 
-INFO:Xst:2261 - The FF/Latch <b3/count_16> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_16> <b2/count_16> <b1/count_16> 
-INFO:Xst:2261 - The FF/Latch <b3/count_3> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_3> <b2/count_3> <b1/count_3> 
-INFO:Xst:2261 - The FF/Latch <b3/count_22> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_22> <b2/count_22> <b1/count_22> 
-INFO:Xst:2261 - The FF/Latch <b3/count_17> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_17> <b2/count_17> <b1/count_17> 
-INFO:Xst:2261 - The FF/Latch <b3/count_4> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_4> <b2/count_4> <b1/count_4> 
-INFO:Xst:2261 - The FF/Latch <b3/count_23> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_23> <b2/count_23> <b1/count_23> 
-INFO:Xst:2261 - The FF/Latch <b3/count_18> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_18> <b2/count_18> <b1/count_18> 
-INFO:Xst:2261 - The FF/Latch <b3/count_5> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_5> <b2/count_5> <b1/count_5> 
-INFO:Xst:2261 - The FF/Latch <b3/count_24> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_24> <b2/count_24> <b1/count_24> 
-INFO:Xst:2261 - The FF/Latch <b3/count_19> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_19> <b2/count_19> <b1/count_19> 
-INFO:Xst:2261 - The FF/Latch <b3/count_6> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_6> <b2/count_6> <b1/count_6> 
-INFO:Xst:2261 - The FF/Latch <b3/count_30> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_30> <b2/count_30> <b1/count_30> 
-INFO:Xst:2261 - The FF/Latch <b3/count_25> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_25> <b2/count_25> <b1/count_25> 
-INFO:Xst:2261 - The FF/Latch <b3/count_7> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_7> <b2/count_7> <b1/count_7> 
-INFO:Xst:2261 - The FF/Latch <b3/count_31> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_31> <b2/count_31> <b1/count_31> 
-INFO:Xst:2261 - The FF/Latch <b3/count_26> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_26> <b2/count_26> <b1/count_26> 
-INFO:Xst:2261 - The FF/Latch <b3/count_8> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_8> <b2/count_8> <b1/count_8> 
-INFO:Xst:2261 - The FF/Latch <b3/count_27> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_27> <b2/count_27> <b1/count_27> 
-INFO:Xst:2261 - The FF/Latch <b3/count_9> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_9> <b2/count_9> <b1/count_9> 
-INFO:Xst:2261 - The FF/Latch <b3/count_28> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_28> <b2/count_28> <b1/count_28> 
-INFO:Xst:2261 - The FF/Latch <b3/count_29> in Unit <single_cpu> is equivalent to the following 3 FFs/Latches, which will be removed : <b0/count_29> <b2/count_29> <b1/count_29> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_15> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_15> <b2/_i000001/cnt_15> <b1/_i000001/cnt_15> <b0/_i000001/cnt_15> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_0> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_0> <b2/_i000001/cnt_0> <b1/_i000001/cnt_0> <b0/_i000001/cnt_0> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_1> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_1> <b2/_i000001/cnt_1> <b1/_i000001/cnt_1> <b0/_i000001/cnt_1> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_2> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_2> <b2/_i000001/cnt_2> <b1/_i000001/cnt_2> <b0/_i000001/cnt_2> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_3> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_3> <b2/_i000001/cnt_3> <b1/_i000001/cnt_3> <b0/_i000001/cnt_3> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_4> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_4> <b2/_i000001/cnt_4> <b1/_i000001/cnt_4> <b0/_i000001/cnt_4> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_5> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_5> <b2/_i000001/cnt_5> <b1/_i000001/cnt_5> <b0/_i000001/cnt_5> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_6> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_6> <b2/_i000001/cnt_6> <b1/_i000001/cnt_6> <b0/_i000001/cnt_6> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_7> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_7> <b2/_i000001/cnt_7> <b1/_i000001/cnt_7> <b0/_i000001/cnt_7> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_8> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_8> <b2/_i000001/cnt_8> <b1/_i000001/cnt_8> <b0/_i000001/cnt_8> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_9> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_9> <b2/_i000001/cnt_9> <b1/_i000001/cnt_9> <b0/_i000001/cnt_9> 
+INFO:Xst:2261 - The FF/Latch <m0/oclk> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/oclk> <b2/_i000001/oclk> <b1/_i000001/oclk> <b0/_i000001/oclk> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_10> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_10> <b2/_i000001/cnt_10> <b1/_i000001/cnt_10> <b0/_i000001/cnt_10> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_11> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_11> <b2/_i000001/cnt_11> <b1/_i000001/cnt_11> <b0/_i000001/cnt_11> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_12> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_12> <b2/_i000001/cnt_12> <b1/_i000001/cnt_12> <b0/_i000001/cnt_12> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_13> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_13> <b2/_i000001/cnt_13> <b1/_i000001/cnt_13> <b0/_i000001/cnt_13> 
+INFO:Xst:2261 - The FF/Latch <m0/cnt_14> in Unit <single_cpu> is equivalent to the following 4 FFs/Latches, which will be removed : <b3/_i000001/cnt_14> <b2/_i000001/cnt_14> <b1/_i000001/cnt_14> <b0/_i000001/cnt_14> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -1572,8 +1553,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1156
- Flip-Flops                                            : 1156
+# Registers                                            : 1132
+ Flip-Flops                                            : 1132
 
 =========================================================================
 
@@ -1596,31 +1577,31 @@ Top Level Output File Name         : single_cpu.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1766
+# BELS                             : 1614
 #      GND                         : 3
-#      INV                         : 6
-#      LUT1                        : 77
-#      LUT2                        : 12
-#      LUT3                        : 52
-#      LUT4                        : 99
-#      LUT5                        : 136
-#      LUT6                        : 890
-#      MUXCY                       : 170
-#      MUXF7                       : 133
+#      INV                         : 5
+#      LUT1                        : 30
+#      LUT2                        : 8
+#      LUT3                        : 55
+#      LUT4                        : 119
+#      LUT5                        : 145
+#      LUT6                        : 853
+#      MUXCY                       : 122
+#      MUXF7                       : 134
 #      MUXF8                       : 32
 #      VCC                         : 3
-#      XORCY                       : 153
-# FlipFlops/Latches                : 1156
-#      FD                          : 67
+#      XORCY                       : 105
+# FlipFlops/Latches                : 1132
+#      FD                          : 93
 #      FDC                         : 16
-#      FDCE                        : 128
-#      FDE                         : 868
+#      FDCE_1                      : 128
+#      FDE_1                       : 864
 #      FDP                         : 9
-#      FDR                         : 68
+#      FDR                         : 22
 # RAMS                             : 2
 #      RAMB16BWER                  : 2
-# Clock Buffers                    : 2
-#      BUFG                        : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 2
 #      BUFGP                       : 1
 # IO Buffers                       : 20
 #      IBUF                        : 4
@@ -1633,16 +1614,16 @@ Selected Device : 6slx9tqg144-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1156  out of  11440    10%  
- Number of Slice LUTs:                 1272  out of   5720    22%  
-    Number used as Logic:              1272  out of   5720    22%  
+ Number of Slice Registers:            1132  out of  11440     9%  
+ Number of Slice LUTs:                 1215  out of   5720    21%  
+    Number used as Logic:              1215  out of   5720    21%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2083
-   Number with an unused Flip Flop:     927  out of   2083    44%  
-   Number with an unused LUT:           811  out of   2083    38%  
-   Number of fully used LUT-FF pairs:   345  out of   2083    16%  
-   Number of unique control sets:        40
+ Number of LUT Flip Flop pairs used:   2079
+   Number with an unused Flip Flop:     947  out of   2079    45%  
+   Number with an unused LUT:           864  out of   2079    41%  
+   Number of fully used LUT-FF pairs:   268  out of   2079    12%  
+   Number of unique control sets:        38
 
 IO Utilization: 
  Number of IOs:                          21
@@ -1651,7 +1632,7 @@ IO Utilization:
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                2  out of     32     6%  
     Number using Block RAM only:          2
- Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1674,11 +1655,11 @@ Clock Information:
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                                                  | Load  |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+-------+
-CCLK                               | BUFGP                                                                                                                                  | 111   |
-b0/key_out                         | BUFG                                                                                                                                   | 1026  |
-b2/key_out                         | NONE(ch_0)                                                                                                                             | 2     |
-b3/key_out                         | NONE(SW_0)                                                                                                                             | 4     |
-m0/oclk                            | NONE(d0/cnt_2)                                                                                                                         | 15    |
+CCLK                               | BUFGP                                                                                                                                  | 51    |
+b3/btn_out                         | NONE(SW_0)                                                                                                                             | 4     |
+b0/btn_out                         | BUFG                                                                                                                                   | 1026  |
+b2/btn_out                         | NONE(ch_0)                                                                                                                             | 2     |
+m0/oclk                            | BUFG                                                                                                                                   | 51    |
 x_c_instr_mem/N1                   | NONE(x_c_instr_mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)| 1     |
 x_c_dat_mem/N1                     | NONE(x_c_dat_mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)  | 1     |
 -----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+-------+
@@ -1692,7 +1673,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 11.710ns (Maximum Frequency: 85.397MHz)
+   Minimum period: 16.978ns (Maximum Frequency: 58.901MHz)
    Minimum input arrival time before clock: 2.083ns
    Maximum output required time after clock: 5.558ns
    Maximum combinational path delay: No path found
@@ -1703,10 +1684,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CCLK'
-  Clock period: 11.710ns (frequency: 85.397MHz)
-  Total number of paths / destination ports: 15287 / 218
+  Clock period: 12.974ns (frequency: 77.079MHz)
+  Total number of paths / destination ports: 11783 / 110
 -------------------------------------------------------------------------
-Delay:               11.710ns (Levels of Logic = 24)
+Delay:               12.974ns (Levels of Logic = 24)
   Source:            x_c_instr_mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
   Destination:       x_c_dat_mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
   Source Clock:      CCLK rising
@@ -1716,9 +1697,9 @@ Delay:               11.710ns (Levels of Logic = 24)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16BWER:CLKA->DOA17  260   2.100   2.540  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (douta<17>)
+     RAMB16BWER:CLKA->DOA17  260   2.100   2.887  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (douta<17>)
      end scope: 'x_c_instr_mem:douta<17>'
-     LUT6:I4->O            1   0.250   0.958  x_single_gpr/Mmux_o_op2_834 (x_single_gpr/Mmux_o_op2_834)
+     LUT6:I0->O            1   0.254   0.958  x_single_gpr/Mmux_o_op2_834 (x_single_gpr/Mmux_o_op2_834)
      LUT6:I2->O            1   0.254   0.000  x_single_gpr/Mmux_o_op2_311 (x_single_gpr/Mmux_o_op2_311)
      MUXF7:I1->O           5   0.175   0.841  x_single_gpr/Mmux_o_op2_2_f7_10 (reg2_dat<1>)
      LUT3:I2->O            2   0.254   1.002  x_single_mux32/Mmux_out121 (mux_to_alu<1>)
@@ -1737,35 +1718,57 @@ Delay:               11.710ns (Levels of Logic = 24)
      MUXCY:CI->O           1   0.023   0.000  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<11> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<11>)
      MUXCY:CI->O           1   0.023   0.000  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<12> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<12>)
      MUXCY:CI->O           1   0.023   0.000  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<13> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<14> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<14>)
-     MUXCY:CI->O           1   0.235   0.790  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<15> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<15>)
-     LUT5:I3->O            1   0.250   0.000  x_single_alu/Mmux_o_alu613_G (N23)
+     MUXCY:CI->O           1   0.235   0.682  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<14> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<14>)
+     LUT5:I4->O            1   0.254   0.790  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<15> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<15>)
+     LUT5:I3->O            1   0.250   0.000  x_single_alu/Mmux_o_alu613_G (N27)
      MUXF7:I1->O           2   0.175   0.725  x_single_alu/Mmux_o_alu613 (alu_out<0>)
      begin scope: 'x_c_dat_mem:addra<0>'
      RAMB16BWER:ADDRA5         0.400          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
     ----------------------------------------
-    Total                     11.710ns (4.854ns logic, 6.856ns route)
-                                       (41.4% logic, 58.6% route)
+    Total                     12.974ns (5.088ns logic, 7.885ns route)
+                                       (39.2% logic, 60.8% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'b0/key_out'
-  Clock period: 9.219ns (frequency: 108.475MHz)
-  Total number of paths / destination ports: 3600819 / 1026
+Timing constraint: Default period analysis for Clock 'b3/btn_out'
+  Clock period: 4.625ns (frequency: 216.237MHz)
+  Total number of paths / destination ports: 26 / 8
 -------------------------------------------------------------------------
-Delay:               9.219ns (Levels of Logic = 36)
-  Source:            x_single_gpr/mem_023 (FF)
-  Destination:       x_single_pc/x_dff/q_6 (FF)
-  Source Clock:      b0/key_out rising
-  Destination Clock: b0/key_out rising
+Delay:               4.625ns (Levels of Logic = 1)
+  Source:            SW_1 (FF)
+  Destination:       SW_0 (FF)
+  Source Clock:      b3/btn_out rising
+  Destination Clock: b3/btn_out rising
 
-  Data Path: x_single_gpr/mem_023 to x_single_pc/x_dff/q_6
+  Data Path: SW_1 to SW_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              3   0.525   1.221  x_single_gpr/mem_023 (x_single_gpr/mem_023)
-     LUT6:I0->O            1   0.254   0.958  x_single_gpr/Mmux_o_op2_92 (x_single_gpr/Mmux_o_op2_92)
-     LUT6:I2->O            1   0.254   0.000  x_single_gpr/Mmux_o_op2_4 (x_single_gpr/Mmux_o_op2_4)
-     MUXF7:I0->O           5   0.163   0.949  x_single_gpr/Mmux_o_op2_2_f7 (reg2_dat<0>)
+     FDR:C->Q            132   0.525   2.584  SW_1 (SW_1)
+     LUT4:I0->O            4   0.254   0.803  GND_1_o_GND_1_o_equal_11_o<3>1 (GND_1_o_GND_1_o_equal_11_o)
+     FDR:R                     0.459          SW_0
+    ----------------------------------------
+    Total                      4.625ns (1.238ns logic, 3.387ns route)
+                                       (26.8% logic, 73.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'b0/btn_out'
+  Clock period: 16.978ns (frequency: 58.901MHz)
+  Total number of paths / destination ports: 3596975 / 1026
+-------------------------------------------------------------------------
+Delay:               8.489ns (Levels of Logic = 32)
+  Source:            x_single_gpr/mem_06 (FF)
+  Destination:       x_single_pc/x_dff/q_8 (FF)
+  Source Clock:      b0/btn_out falling
+  Destination Clock: b0/btn_out rising
+
+  Data Path: x_single_gpr/mem_06 to x_single_pc/x_dff/q_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.525   1.002  x_single_gpr/mem_06 (x_single_gpr/mem_06)
+     LUT6:I2->O            1   0.254   0.958  x_single_gpr/Mmux_o_op2_81 (x_single_gpr/Mmux_o_op2_81)
+     LUT6:I2->O            1   0.254   0.000  x_single_gpr/Mmux_o_op2_3 (x_single_gpr/Mmux_o_op2_3)
+     MUXF7:I1->O           5   0.175   0.949  x_single_gpr/Mmux_o_op2_2_f7 (reg2_dat<0>)
      LUT4:I2->O            1   0.250   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_lut<0> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_lut<0>)
      MUXCY:S->O            1   0.215   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<0> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<0>)
      MUXCY:CI->O           1   0.023   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<1> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<1>)
@@ -1786,72 +1789,46 @@ Delay:               9.219ns (Levels of Logic = 36)
      MUXCY:CI->O           1   0.023   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<16> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<16>)
      MUXCY:CI->O           1   0.023   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<17> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<17>)
      MUXCY:CI->O           1   0.023   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<18> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<18>)
-     MUXCY:CI->O           1   0.023   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<19> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<19>)
-     MUXCY:CI->O           1   0.023   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<20> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<20>)
-     MUXCY:CI->O           1   0.023   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<21> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<21>)
-     MUXCY:CI->O           1   0.023   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<22> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<22>)
-     XORCY:CI->O           2   0.206   1.181  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_xor<23> (x_single_alu/i_r[31]_i_s[31]_sub_4_OUT<23>)
+     XORCY:CI->O           2   0.206   1.181  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_xor<19> (x_single_alu/i_r[31]_i_s[31]_sub_4_OUT<19>)
      LUT6:I0->O            1   0.254   0.000  and_out_wg_lut<1> (and_out_wg_lut<1>)
      MUXCY:S->O            1   0.215   0.000  and_out_wg_cy<1> (and_out_wg_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  and_out_wg_cy<2> (and_out_wg_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  and_out_wg_cy<3> (and_out_wg_cy<3>)
      MUXCY:CI->O           1   0.023   0.000  and_out_wg_cy<4> (and_out_wg_cy<4>)
      MUXCY:CI->O           1   0.023   0.000  and_out_wg_cy<5> (and_out_wg_cy<5>)
-     MUXCY:CI->O           9   0.235   1.406  and_out_wg_cy<6> (and_out)
-     LUT6:I1->O            1   0.254   0.000  Mmux_pc_in71 (pc_in<6>)
-     FD:D                      0.074          x_single_pc/x_dff/q_6
+     MUXCY:CI->O           9   0.235   0.976  and_out_wg_cy<6> (and_out)
+     LUT5:I4->O            1   0.254   0.000  Mmux_pc_in11 (pc_in<0>)
+     FD:D                      0.074          x_single_pc/x_dff/q_0
     ----------------------------------------
-    Total                      9.219ns (3.504ns logic, 5.715ns route)
-                                       (38.0% logic, 62.0% route)
+    Total                      8.489ns (3.423ns logic, 5.066ns route)
+                                       (40.3% logic, 59.7% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'b2/key_out'
-  Clock period: 3.087ns (frequency: 323.889MHz)
-  Total number of paths / destination ports: 3 / 2
+Timing constraint: Default period analysis for Clock 'b2/btn_out'
+  Clock period: 3.620ns (frequency: 276.206MHz)
+  Total number of paths / destination ports: 7 / 4
 -------------------------------------------------------------------------
-Delay:               3.087ns (Levels of Logic = 1)
-  Source:            ch_0 (FF)
+Delay:               3.620ns (Levels of Logic = 1)
+  Source:            ch_1 (FF)
   Destination:       ch_0 (FF)
-  Source Clock:      b2/key_out rising
-  Destination Clock: b2/key_out rising
+  Source Clock:      b2/btn_out rising
+  Destination Clock: b2/btn_out rising
 
-  Data Path: ch_0 to ch_0
+  Data Path: ch_1 to ch_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              34   0.525   1.552  ch_0 (ch_0)
-     INV:I->O              1   0.255   0.681  Mcount_ch_xor<0>11_INV_0 (Result<0>2)
-     FD:D                      0.074          ch_0
+     FDR:C->Q             34   0.525   1.661  ch_1 (ch_1)
+     LUT2:I0->O            2   0.250   0.725  ch[1]_PWR_1_o_equal_2_o<1>1 (ch[1]_PWR_1_o_equal_2_o)
+     FDR:R                     0.459          ch_0
     ----------------------------------------
-    Total                      3.087ns (0.854ns logic, 2.233ns route)
-                                       (27.7% logic, 72.3% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'b3/key_out'
-  Clock period: 4.625ns (frequency: 216.237MHz)
-  Total number of paths / destination ports: 26 / 8
--------------------------------------------------------------------------
-Delay:               4.625ns (Levels of Logic = 1)
-  Source:            SW_1 (FF)
-  Destination:       SW_0 (FF)
-  Source Clock:      b3/key_out rising
-  Destination Clock: b3/key_out rising
-
-  Data Path: SW_1 to SW_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q            132   0.525   2.584  SW_1 (SW_1)
-     LUT4:I0->O            4   0.254   0.803  GND_1_o_GND_1_o_equal_9_o<3>1 (GND_1_o_GND_1_o_equal_9_o)
-     FDR:R                     0.459          SW_0
-    ----------------------------------------
-    Total                      4.625ns (1.238ns logic, 3.387ns route)
-                                       (26.8% logic, 73.2% route)
+    Total                      3.620ns (1.234ns logic, 2.386ns route)
+                                       (34.1% logic, 65.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'm0/oclk'
   Clock period: 2.795ns (frequency: 357.782MHz)
-  Total number of paths / destination ports: 50 / 15
+  Total number of paths / destination ports: 110 / 47
 -------------------------------------------------------------------------
 Delay:               2.795ns (Levels of Logic = 1)
   Source:            d0/cnt_0 (FF)
@@ -1871,20 +1848,20 @@ Delay:               2.795ns (Levels of Logic = 1)
                                        (30.6% logic, 69.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'CCLK'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'm0/oclk'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
 Offset:              2.083ns (Levels of Logic = 1)
   Source:            btn<3> (PAD)
-  Destination:       b3/key_reg1 (FF)
-  Destination Clock: CCLK rising
+  Destination:       b3/pbshift_0 (FF)
+  Destination Clock: m0/oclk rising
 
-  Data Path: btn<3> to b3/key_reg1
+  Data Path: btn<3> to b3/pbshift_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.328   0.681  btn_3_IBUF (btn_3_IBUF)
-     FDE:D                     0.074          b3/key_reg1
+     FD:D                      0.074          b3/pbshift_0
     ----------------------------------------
     Total                      2.083ns (1.402ns logic, 0.681ns route)
                                        (67.3% logic, 32.7% route)
@@ -1919,35 +1896,36 @@ Clock to Setup on destination clock CCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CCLK           |   11.710|         |         |         |
-b0/key_out     |    8.808|         |         |         |
-b2/key_out     |    2.861|         |         |         |
-b3/key_out     |    5.088|         |         |         |
+CCLK           |   12.974|         |         |         |
+b0/btn_out     |    2.084|    9.514|         |         |
+b2/btn_out     |    2.878|         |         |         |
+b3/btn_out     |    5.088|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock b0/key_out
+Clock to Setup on destination clock b0/btn_out
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CCLK           |   12.121|         |         |         |
-b0/key_out     |    9.219|         |         |         |
+CCLK           |   11.949|         |   14.059|         |
+b0/btn_out     |    4.986|    8.489|    9.719|         |
+m0/oclk        |    3.354|         |    7.268|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock b2/key_out
+Clock to Setup on destination clock b2/btn_out
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-b2/key_out     |    3.087|         |         |         |
+b2/btn_out     |    3.620|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock b3/key_out
+Clock to Setup on destination clock b3/btn_out
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-b3/key_out     |    4.625|         |         |         |
+b3/btn_out     |    4.625|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock m0/oclk
@@ -1963,13 +1941,13 @@ m0/oclk        |    2.795|         |         |         |
 
 
 Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 12.38 secs
+Total CPU time to Xst completion: 11.92 secs
  
 --> 
 
-Total memory usage is 258584 kilobytes
+Total memory usage is 258700 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   45 (   0 filtered)
-Number of infos    :   37 (   0 filtered)
+Number of warnings :   48 (   0 filtered)
+Number of infos    :   22 (   0 filtered)
 

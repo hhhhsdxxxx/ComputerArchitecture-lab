@@ -135,7 +135,7 @@ module single_gpr(
 		assign o_op1 = mem[i_adr1];
 		assign o_op2 = mem[i_adr2];
 		assign o_op3 = mem[i_adr3];
-	 always @(posedge clk or posedge rst) begin
+	 always @(negedge clk or posedge rst) begin
 		if (rst == 1) begin
 			mem[0] <= 32'h00000000;
 			mem[1] <= 32'h00000000;

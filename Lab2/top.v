@@ -75,35 +75,32 @@ endmodule
 
 module pbtn(clk, btn, btn_out);
 	input clk, btn;
-	output btn_out;
-	reg [31:0]count;
- reg key_reg1,key_reg2,key_out;
- always @(posedge clk)//CLK 50M
-    begin
-    count<=count+1;
-    if(count==500000)
-    begin
-        key_reg1<=btn; 
-        count<=0;
-    end
-    key_reg2<=key_reg1; 
-    key_out<=key_reg2&(!key_reg1); 
- end
- assign btn_out = key_out;
+	output reg btn_out;
+	wire cclk;
+	reg [7:0]pbshift;
+	clk_10ms(clk, cclk);
+	always@(posedge cclk)begin
+	pbshift<=pbshift<<1;
+	pbshift[0]<=btn;
+	if(pbshift == 8'h00)
+		btn_out <= 1;
+	else
+		btn_out <= 0;
+	end
 endmodule
 
 module clk_10ms(clk, oclk);
 input clk;
 output oclk;
 reg oclk;
-reg [31:0] cnt;
+reg [15:0] cnt;
 initial begin
 	cnt <= 0;
 	oclk <= 0;
 end
 always@(posedge clk)begin
 	cnt <= cnt + 1;
-	if(cnt == 25000)begin
+	if(cnt == 5000)begin
 		cnt <= 0;
 		oclk <= ~oclk;
 	end

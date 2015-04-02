@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-HENRYHUANG::  Thu Apr 02 13:35:03 2015
+HENRYHUANG::  Thu Apr 02 17:19:03 2015
 
 par -w -intstyle ise -ol high -mt off single_cpu_map.ncd single_cpu.ncd
 single_cpu.pcf 
@@ -27,30 +27,30 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                 1,156 out of  11,440   10%
-    Number used as Flip Flops:               1,156
+  Number of Slice Registers:                 1,132 out of  11,440    9%
+    Number used as Flip Flops:               1,132
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      1,262 out of   5,720   22%
-    Number used as logic:                    1,228 out of   5,720   21%
-      Number using O6 output only:           1,109
-      Number using O5 output only:              74
-      Number using O5 and O6:                   45
+  Number of Slice LUTs:                      1,194 out of   5,720   20%
+    Number used as logic:                    1,153 out of   5,720   20%
+      Number using O6 output only:           1,062
+      Number using O5 output only:              28
+      Number using O5 and O6:                   63
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
-    Number used exclusively as route-thrus:     34
-      Number with same-slice register load:     31
-      Number with same-slice carry load:         3
+    Number used exclusively as route-thrus:     41
+      Number with same-slice register load:     39
+      Number with same-slice carry load:         2
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   969 out of   1,430   67%
-  Number of MUXCYs used:                       180 out of   2,860    6%
-  Number of LUT Flip Flop pairs used:        1,915
-    Number with an unused Flip Flop:           801 out of   1,915   41%
-    Number with an unused LUT:                 653 out of   1,915   34%
-    Number of fully used LUT-FF pairs:         461 out of   1,915   24%
+  Number of occupied Slices:                   962 out of   1,430   67%
+  Number of MUXCYs used:                       132 out of   2,860    4%
+  Number of LUT Flip Flop pairs used:        1,856
+    Number with an unused Flip Flop:           769 out of   1,856   41%
+    Number with an unused LUT:                 662 out of   1,856   35%
+    Number of fully used LUT-FF pairs:         425 out of   1,856   22%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -69,8 +69,8 @@ Specific Feature Utilization:
   Number of RAMB8BWERs:                          0 out of      64    0%
   Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
   Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
-  Number of BUFG/BUFGMUXs:                       2 out of      16   12%
-    Number used as BUFGs:                        2
+  Number of BUFG/BUFGMUXs:                       3 out of      16   18%
+    Number used as BUFGs:                        3
     Number used as BUFGMUX:                      0
   Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
   Number of ILOGIC2/ISERDES2s:                   0 out of     200    0%
@@ -99,23 +99,23 @@ Finished initial Timing Analysis.  REAL time: 2 secs
 Starting Router
 
 
-Phase  1  : 9843 unrouted;      REAL time: 3 secs 
+Phase  1  : 9663 unrouted;      REAL time: 2 secs 
 
-Phase  2  : 8657 unrouted;      REAL time: 3 secs 
+Phase  2  : 8496 unrouted;      REAL time: 3 secs 
 
-Phase  3  : 3950 unrouted;      REAL time: 7 secs 
+Phase  3  : 3837 unrouted;      REAL time: 7 secs 
 
-Phase  4  : 3950 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
+Phase  4  : 3837 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
 Updating file: single_cpu.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 13 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
 Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
@@ -141,20 +141,20 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net b3/ | SETUP       |         N/A|     2.848ns|     N/A|           0
-  key_out                                   | HOLD        |     0.475ns|            |       0|           0
+  Autotimespec constraint for clock net b3/ | SETUP       |         N/A|     2.559ns|     N/A|           0
+  btn_out                                   | HOLD        |     0.456ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net m0/ | SETUP       |         N/A|     2.352ns|     N/A|           0
-  oclk                                      | HOLD        |     0.456ns|            |       0|           0
+  Autotimespec constraint for clock net m0/ | SETUP       |         N/A|     2.724ns|     N/A|           0
+  oclk_BUFG                                 | HOLD        |     0.392ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net b0/ | SETUP       |         N/A|    13.456ns|     N/A|           0
-  key_out_BUFG                              | HOLD        |     0.520ns|            |       0|           0
+  Autotimespec constraint for clock net b2/ | SETUP       |         N/A|     2.171ns|     N/A|           0
+  btn_out                                   | HOLD        |     0.456ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net b2/ | SETUP       |         N/A|     1.393ns|     N/A|           0
-  key_out                                   | HOLD        |     0.461ns|            |       0|           0
+  Autotimespec constraint for clock net b0/ | SETUP       |         N/A|    15.913ns|     N/A|           0
+  btn_out_BUFG                              | HOLD        |     0.517ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net CCL | SETUP       |         N/A|    15.225ns|     N/A|           0
-  K_BUFGP                                   | HOLD        |     0.441ns|            |       0|           0
+  Autotimespec constraint for clock net CCL | SETUP       |         N/A|    14.946ns|     N/A|           0
+  K_BUFGP                                   | HOLD        |     0.440ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -173,7 +173,7 @@ All signals are completely routed.
 Total REAL time to PAR completion: 18 secs 
 Total CPU time to PAR completion: 18 secs 
 
-Peak Memory Usage:  392 MB
+Peak Memory Usage:  402 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
