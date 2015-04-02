@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\users\ComputerArchitecture\Lab2\single_cpu.ncd
+OUTFILE=D:\users\ComputerArchitecture\Lab2\single_cpu.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\users\ComputerArchitecture\Lab2
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

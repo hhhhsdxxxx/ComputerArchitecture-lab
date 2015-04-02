@@ -3,7 +3,7 @@ Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
--n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf
+-n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf sp6.ucf
 
 Design file:              top.ncd
 Physical constraint file: top.pcf
@@ -33,14 +33,14 @@ No constraints were found to generate data for the Data Sheet Report section.
 Use the Advanced Analysis (-a) option or generate global constraints for each
 clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
 
-Analysis completed Sun Mar 22 14:13:24 2015 
+Analysis completed Thu Mar 26 16:28:27 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 236 MB
+Peak Memory Usage: 234 MB
 
 
 

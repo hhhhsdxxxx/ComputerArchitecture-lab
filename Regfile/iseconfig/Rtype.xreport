@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-03-22T16:28:56</DateModified>
+  <DateModified>2015-03-26T16:25:07</DateModified>
   <ModuleName>Rtype</ModuleName>
   <SummaryTimeStamp>2015-03-22T16:22:45</SummaryTimeStamp>
   <SavedFilePath>D:/users/ComputerArchitecture/Regfile/iseconfig/Rtype.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/users/ComputerArchitecture/Regfile</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/users/ComputerArchitecture/Regfile\</ImplementationReportsDirectory>
   <DateInitialized>2015-03-22T15:26:00</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

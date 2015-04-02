@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "D:/users/ComputerArchitecture/test/rs232.xst" -ofn "D:/users/ComputerArchitecture/test/rs232.syr" 
+xst -intstyle ise -ifn "D:/users/ComputerArchitecture/test/rs232.xst" -ofn "D:/users/ComputerArchitecture/test/rs232.syr" 
+xst -intstyle ise -ifn "D:/users/ComputerArchitecture/test/rs232.xst" -ofn "D:/users/ComputerArchitecture/test/rs232.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sp6.ucf -p xc6slx9-tqg144-2 rs232.ngc rs232.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sp6.ucf -p xc6slx9-tqg144-2 rs232.ngc rs232.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rs232_map.ncd rs232.ngd rs232.pcf 
+par -w -intstyle ise -ol high -mt off rs232_map.ncd rs232.ncd rs232.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rs232.twx rs232.ncd -o rs232.twr rs232.pcf -ucf sp6.ucf 
+bitgen -intstyle ise -f rs232.ut rs232.ncd 
+xst -intstyle ise -ifn "D:/users/ComputerArchitecture/test/rs232.xst" -ofn "D:/users/ComputerArchitecture/test/rs232.syr" 
+xst -intstyle ise -ifn "D:/users/ComputerArchitecture/test/rs232.xst" -ofn "D:/users/ComputerArchitecture/test/rs232.syr" 

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/users/ComputerArchitecture/Lab2/single_ctl.xst" -ofn "D:/users/ComputerArchitecture/Lab2/single_ctl.syr" 

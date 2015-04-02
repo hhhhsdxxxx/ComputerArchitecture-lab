@@ -1,0 +1,54 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/users/ComputerArchitecture/Lab2/simulation_isim_beh.exe -prj D:/users/ComputerArchitecture/Lab2/simulation_beh.prj work.simulation work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/sel.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/dff.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/top.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/single_signext.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/single_pc_plus4.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/single_pc.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/single_mux.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/single_ctl.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/single_aluc.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/single_add.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/ipcore_dir/c_instr_mem.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/ipcore_dir/c_dat_mem.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/single_cpu.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab2/simulation.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module display
+Compiling module pbtn
+Compiling module clk_10ms
+Compiling module dff
+Compiling module sel
+Compiling module single_pc
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module c_instr_mem
+Compiling module single_pc_plus4
+Compiling module single_mux5
+Compiling module single_gpr
+Compiling module single_aluc
+Compiling module single_signext
+Compiling module single_mux32
+Compiling module single_alu
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module c_dat_mem
+Compiling module single_add
+Compiling module single_ctl
+Compiling module single_cpu
+Compiling module simulation
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 7 sub-compilation(s) to finish...
+Compiled 26 Verilog Units
+Built simulation executable D:/users/ComputerArchitecture/Lab2/simulation_isim_beh.exe
+Fuse Memory Usage: 31668 KB
+Fuse CPU Usage: 671 ms
