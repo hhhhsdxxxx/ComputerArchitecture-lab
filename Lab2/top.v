@@ -83,9 +83,9 @@ module pbtn(clk, btn, btn_out);
 	pbshift<=pbshift<<1;
 	pbshift[0]<=btn;
 	if(pbshift == 8'h00)
-		btn_out <= 1;
-	else
 		btn_out <= 0;
+	else
+		btn_out <= 1;
 	end
 endmodule
 

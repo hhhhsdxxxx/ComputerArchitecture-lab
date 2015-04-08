@@ -245,3 +245,24 @@ map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off single_cpu_map.ncd single_cpu.ncd single_cpu.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml single_cpu.twx single_cpu.ncd -o single_cpu.twr single_cpu.pcf -ucf sp6.ucf 
 bitgen -intstyle ise -f single_cpu.ut single_cpu.ncd 
+xst -intstyle ise -ifn "D:/users/ComputerArchitecture/Lab2/single_cpu.xst" -ofn "D:/users/ComputerArchitecture/Lab2/single_cpu.syr" 
+xst -intstyle ise -ifn "D:/users/ComputerArchitecture/Lab2/single_cpu.xst" -ofn "D:/users/ComputerArchitecture/Lab2/single_cpu.syr" 
+xst -intstyle ise -ifn "D:/users/ComputerArchitecture/Lab2/single_cpu.xst" -ofn "D:/users/ComputerArchitecture/Lab2/single_cpu.syr" 
+xst -intstyle ise -ifn "D:/users/ComputerArchitecture/Lab2/single_cpu.xst" -ofn "D:/users/ComputerArchitecture/Lab2/single_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sp6.ucf -p xc6slx9-tqg144-2 single_cpu.ngc single_cpu.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_cpu_map.ncd single_cpu.ngd single_cpu.pcf 
+par -w -intstyle ise -ol high -mt off single_cpu_map.ncd single_cpu.ncd single_cpu.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml single_cpu.twx single_cpu.ncd -o single_cpu.twr single_cpu.pcf -ucf sp6.ucf 
+bitgen -intstyle ise -f single_cpu.ut single_cpu.ncd 
+xst -intstyle ise -ifn "D:/users/ComputerArchitecture/Lab2/single_cpu.xst" -ofn "D:/users/ComputerArchitecture/Lab2/single_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sp6.ucf -p xc6slx9-tqg144-2 single_cpu.ngc single_cpu.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_cpu_map.ncd single_cpu.ngd single_cpu.pcf 
+par -w -intstyle ise -ol high -mt off single_cpu_map.ncd single_cpu.ncd single_cpu.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml single_cpu.twx single_cpu.ncd -o single_cpu.twr single_cpu.pcf -ucf sp6.ucf 
+bitgen -intstyle ise -f single_cpu.ut single_cpu.ncd 
+xst -intstyle ise -ifn "D:/users/ComputerArchitecture/Lab2/single_cpu.xst" -ofn "D:/users/ComputerArchitecture/Lab2/single_cpu.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc sp6.ucf -p xc6slx9-tqg144-2 single_cpu.ngc single_cpu.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o single_cpu_map.ncd single_cpu.ngd single_cpu.pcf 
+par -w -intstyle ise -ol high -mt off single_cpu_map.ncd single_cpu.ncd single_cpu.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml single_cpu.twx single_cpu.ncd -o single_cpu.twr single_cpu.pcf -ucf sp6.ucf 
+bitgen -intstyle ise -f single_cpu.ut single_cpu.ncd 

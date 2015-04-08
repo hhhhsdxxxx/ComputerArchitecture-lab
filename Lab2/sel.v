@@ -23,8 +23,8 @@ module sel(clk,rst,ipc,opc);
  		input [8:0] ipc;
   		output [8:0] opc;
 		reg [8:0]opc;
-		always@(posedge rst or posedge clk)begin
-		if(rst == 1)
+		always@(negedge rst or negedge clk)begin
+		if(rst == 0)
 			opc <= 9'b1111_1111_1;
 		else
 			opc <= ipc;

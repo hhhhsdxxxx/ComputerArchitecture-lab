@@ -28,7 +28,7 @@ module dff(clk,d,q);
 			q<=0;
 		end
 		
-		always @ (posedge clk) begin
+		always @ (negedge clk) begin
 			q<= d ;
 		end
 endmodule

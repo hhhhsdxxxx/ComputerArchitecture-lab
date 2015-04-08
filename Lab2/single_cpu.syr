@@ -1482,11 +1482,11 @@ Macro Statistics
 
 Optimizing unit <dff> ...
 
-Optimizing unit <sel> ...
-
 Optimizing unit <single_cpu> ...
 
 Optimizing unit <pbtn> ...
+
+Optimizing unit <sel> ...
 
 Optimizing unit <single_gpr> ...
 
@@ -1545,7 +1545,7 @@ INFO:Xst:2261 - The FF/Latch <m0/cnt_14> in Unit <single_cpu> is equivalent to t
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block single_cpu, actual ratio is 39.
+Found area constraint ratio of 100 (+ 5) on block single_cpu, actual ratio is 38.
 
 Final Macro Processing ...
 
@@ -1577,26 +1577,27 @@ Top Level Output File Name         : single_cpu.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1614
+# BELS                             : 1622
 #      GND                         : 3
-#      INV                         : 5
+#      INV                         : 9
 #      LUT1                        : 30
 #      LUT2                        : 8
 #      LUT3                        : 55
-#      LUT4                        : 119
-#      LUT5                        : 145
-#      LUT6                        : 853
-#      MUXCY                       : 122
-#      MUXF7                       : 134
+#      LUT4                        : 99
+#      LUT5                        : 134
+#      LUT6                        : 888
+#      MUXCY                       : 123
+#      MUXF7                       : 133
 #      MUXF8                       : 32
 #      VCC                         : 3
 #      XORCY                       : 105
 # FlipFlops/Latches                : 1132
-#      FD                          : 93
+#      FD                          : 84
+#      FD_1                        : 9
 #      FDC                         : 16
 #      FDCE_1                      : 128
 #      FDE_1                       : 864
-#      FDP                         : 9
+#      FDP_1                       : 9
 #      FDR                         : 22
 # RAMS                             : 2
 #      RAMB16BWER                  : 2
@@ -1615,15 +1616,15 @@ Selected Device : 6slx9tqg144-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:            1132  out of  11440     9%  
- Number of Slice LUTs:                 1215  out of   5720    21%  
-    Number used as Logic:              1215  out of   5720    21%  
+ Number of Slice LUTs:                 1223  out of   5720    21%  
+    Number used as Logic:              1223  out of   5720    21%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2079
-   Number with an unused Flip Flop:     947  out of   2079    45%  
-   Number with an unused LUT:           864  out of   2079    41%  
-   Number of fully used LUT-FF pairs:   268  out of   2079    12%  
-   Number of unique control sets:        38
+ Number of LUT Flip Flop pairs used:   2056
+   Number with an unused Flip Flop:     924  out of   2056    44%  
+   Number with an unused LUT:           833  out of   2056    40%  
+   Number of fully used LUT-FF pairs:   299  out of   2056    14%  
+   Number of unique control sets:        39
 
 IO Utilization: 
  Number of IOs:                          21
@@ -1673,7 +1674,7 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 16.978ns (Maximum Frequency: 58.901MHz)
+   Minimum period: 11.361ns (Maximum Frequency: 88.021MHz)
    Minimum input arrival time before clock: 2.083ns
    Maximum output required time after clock: 5.558ns
    Maximum combinational path delay: No path found
@@ -1684,10 +1685,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CCLK'
-  Clock period: 12.974ns (frequency: 77.079MHz)
-  Total number of paths / destination ports: 11783 / 110
+  Clock period: 11.361ns (frequency: 88.021MHz)
+  Total number of paths / destination ports: 12645 / 110
 -------------------------------------------------------------------------
-Delay:               12.974ns (Levels of Logic = 24)
+Delay:               11.361ns (Levels of Logic = 23)
   Source:            x_c_instr_mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
   Destination:       x_c_dat_mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
   Source Clock:      CCLK rising
@@ -1697,9 +1698,9 @@ Delay:               12.974ns (Levels of Logic = 24)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     RAMB16BWER:CLKA->DOA17  260   2.100   2.887  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (douta<17>)
+     RAMB16BWER:CLKA->DOA17  260   2.100   2.540  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (douta<17>)
      end scope: 'x_c_instr_mem:douta<17>'
-     LUT6:I0->O            1   0.254   0.958  x_single_gpr/Mmux_o_op2_834 (x_single_gpr/Mmux_o_op2_834)
+     LUT6:I4->O            1   0.250   0.958  x_single_gpr/Mmux_o_op2_834 (x_single_gpr/Mmux_o_op2_834)
      LUT6:I2->O            1   0.254   0.000  x_single_gpr/Mmux_o_op2_311 (x_single_gpr/Mmux_o_op2_311)
      MUXF7:I1->O           5   0.175   0.841  x_single_gpr/Mmux_o_op2_2_f7_10 (reg2_dat<1>)
      LUT3:I2->O            2   0.254   1.002  x_single_mux32/Mmux_out121 (mux_to_alu<1>)
@@ -1718,15 +1719,14 @@ Delay:               12.974ns (Levels of Logic = 24)
      MUXCY:CI->O           1   0.023   0.000  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<11> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<11>)
      MUXCY:CI->O           1   0.023   0.000  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<12> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<12>)
      MUXCY:CI->O           1   0.023   0.000  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<13> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<13>)
-     MUXCY:CI->O           1   0.235   0.682  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<14> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<14>)
-     LUT5:I4->O            1   0.254   0.790  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<15> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<15>)
-     LUT5:I3->O            1   0.250   0.000  x_single_alu/Mmux_o_alu613_G (N27)
-     MUXF7:I1->O           2   0.175   0.725  x_single_alu/Mmux_o_alu613 (alu_out<0>)
+     MUXCY:CI->O           1   0.023   0.000  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<14> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<14>)
+     MUXCY:CI->O           1   0.235   0.681  x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<15> (x_single_alu/Mcompar_i_s[31]_i_r[31]_LessThan_6_o_cy<15>)
+     MUXF7:S->O            2   0.185   0.725  x_single_alu/Mmux_o_alu613 (alu_out<0>)
      begin scope: 'x_c_dat_mem:addra<0>'
      RAMB16BWER:ADDRA5         0.400          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram
     ----------------------------------------
-    Total                     12.974ns (5.088ns logic, 7.885ns route)
-                                       (39.2% logic, 60.8% route)
+    Total                     11.361ns (4.614ns logic, 6.747ns route)
+                                       (40.6% logic, 59.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'b3/btn_out'
@@ -1736,8 +1736,8 @@ Timing constraint: Default period analysis for Clock 'b3/btn_out'
 Delay:               4.625ns (Levels of Logic = 1)
   Source:            SW_1 (FF)
   Destination:       SW_0 (FF)
-  Source Clock:      b3/btn_out rising
-  Destination Clock: b3/btn_out rising
+  Source Clock:      b3/btn_out falling
+  Destination Clock: b3/btn_out falling
 
   Data Path: SW_1 to SW_0
                                 Gate     Net
@@ -1752,23 +1752,23 @@ Delay:               4.625ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'b0/btn_out'
-  Clock period: 16.978ns (frequency: 58.901MHz)
-  Total number of paths / destination ports: 3596975 / 1026
+  Clock period: 8.972ns (frequency: 111.461MHz)
+  Total number of paths / destination ports: 3606585 / 1026
 -------------------------------------------------------------------------
-Delay:               8.489ns (Levels of Logic = 32)
-  Source:            x_single_gpr/mem_06 (FF)
+Delay:               8.972ns (Levels of Logic = 32)
+  Source:            x_single_gpr/mem_023 (FF)
   Destination:       x_single_pc/x_dff/q_8 (FF)
   Source Clock:      b0/btn_out falling
-  Destination Clock: b0/btn_out rising
+  Destination Clock: b0/btn_out falling
 
-  Data Path: x_single_gpr/mem_06 to x_single_pc/x_dff/q_8
+  Data Path: x_single_gpr/mem_023 to x_single_pc/x_dff/q_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE_1:C->Q            2   0.525   1.002  x_single_gpr/mem_06 (x_single_gpr/mem_06)
-     LUT6:I2->O            1   0.254   0.958  x_single_gpr/Mmux_o_op2_81 (x_single_gpr/Mmux_o_op2_81)
-     LUT6:I2->O            1   0.254   0.000  x_single_gpr/Mmux_o_op2_3 (x_single_gpr/Mmux_o_op2_3)
-     MUXF7:I1->O           5   0.175   0.949  x_single_gpr/Mmux_o_op2_2_f7 (reg2_dat<0>)
+     FDE_1:C->Q            3   0.525   1.221  x_single_gpr/mem_023 (x_single_gpr/mem_023)
+     LUT6:I0->O            1   0.254   0.958  x_single_gpr/Mmux_o_op2_92 (x_single_gpr/Mmux_o_op2_92)
+     LUT6:I2->O            1   0.254   0.000  x_single_gpr/Mmux_o_op2_4 (x_single_gpr/Mmux_o_op2_4)
+     MUXF7:I0->O           5   0.163   0.949  x_single_gpr/Mmux_o_op2_2_f7 (reg2_dat<0>)
      LUT4:I2->O            1   0.250   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_lut<0> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_lut<0>)
      MUXCY:S->O            1   0.215   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<0> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<0>)
      MUXCY:CI->O           1   0.023   0.000  x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<1> (x_single_alu/Msub_i_r[31]_i_s[31]_sub_4_OUT_cy<1>)
@@ -1796,12 +1796,12 @@ Delay:               8.489ns (Levels of Logic = 32)
      MUXCY:CI->O           1   0.023   0.000  and_out_wg_cy<3> (and_out_wg_cy<3>)
      MUXCY:CI->O           1   0.023   0.000  and_out_wg_cy<4> (and_out_wg_cy<4>)
      MUXCY:CI->O           1   0.023   0.000  and_out_wg_cy<5> (and_out_wg_cy<5>)
-     MUXCY:CI->O           9   0.235   0.976  and_out_wg_cy<6> (and_out)
-     LUT5:I4->O            1   0.254   0.000  Mmux_pc_in11 (pc_in<0>)
-     FD:D                      0.074          x_single_pc/x_dff/q_0
+     MUXCY:CI->O           9   0.235   1.252  and_out_wg_cy<6> (and_out)
+     LUT5:I1->O            1   0.254   0.000  Mmux_pc_in11 (pc_in<0>)
+     FD_1:D                    0.074          x_single_pc/x_dff/q_0
     ----------------------------------------
-    Total                      8.489ns (3.423ns logic, 5.066ns route)
-                                       (40.3% logic, 59.7% route)
+    Total                      8.972ns (3.411ns logic, 5.561ns route)
+                                       (38.0% logic, 62.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'b2/btn_out'
@@ -1811,8 +1811,8 @@ Timing constraint: Default period analysis for Clock 'b2/btn_out'
 Delay:               3.620ns (Levels of Logic = 1)
   Source:            ch_1 (FF)
   Destination:       ch_0 (FF)
-  Source Clock:      b2/btn_out rising
-  Destination Clock: b2/btn_out rising
+  Source Clock:      b2/btn_out falling
+  Destination Clock: b2/btn_out falling
 
   Data Path: ch_1 to ch_0
                                 Gate     Net
@@ -1896,10 +1896,10 @@ Clock to Setup on destination clock CCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CCLK           |   12.974|         |         |         |
-b0/btn_out     |    2.084|    9.514|         |         |
-b2/btn_out     |    2.878|         |         |         |
-b3/btn_out     |    5.088|         |         |         |
+CCLK           |   11.361|         |         |         |
+b0/btn_out     |         |    8.459|         |         |
+b2/btn_out     |         |    2.878|         |         |
+b3/btn_out     |         |    5.088|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock b0/btn_out
@@ -1907,9 +1907,9 @@ Clock to Setup on destination clock b0/btn_out
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CCLK           |   11.949|         |   14.059|         |
-b0/btn_out     |    4.986|    8.489|    9.719|         |
-m0/oclk        |    3.354|         |    7.268|         |
+CCLK           |         |         |   11.874|         |
+b0/btn_out     |         |         |    8.972|         |
+m0/oclk        |         |         |    5.772|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock b2/btn_out
@@ -1917,7 +1917,7 @@ Clock to Setup on destination clock b2/btn_out
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-b2/btn_out     |    3.620|         |         |         |
+b2/btn_out     |         |         |    3.620|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock b3/btn_out
@@ -1925,7 +1925,7 @@ Clock to Setup on destination clock b3/btn_out
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-b3/btn_out     |    4.625|         |         |         |
+b3/btn_out     |         |         |    4.625|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock m0/oclk
@@ -1941,11 +1941,11 @@ m0/oclk        |    2.795|         |         |         |
 
 
 Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.92 secs
+Total CPU time to Xst completion: 11.98 secs
  
 --> 
 
-Total memory usage is 258700 kilobytes
+Total memory usage is 258616 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   48 (   0 filtered)

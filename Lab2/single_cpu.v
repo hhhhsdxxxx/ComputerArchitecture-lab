@@ -61,7 +61,7 @@ module single_cpu(input wire CCLK, input wire [3:0]btn, output wire [7:0]dig, ou
 	ch <=2'b00;
 	SW <= 0;
 	end
-	always@(posedge btn_out[2])begin
+	always@(negedge btn_out[2])begin
 	if(ch == 2'b11)
 		ch <= 0;
 	else
@@ -76,15 +76,15 @@ module single_cpu(input wire CCLK, input wire [3:0]btn, output wire [7:0]dig, ou
 	endcase
 	end
 	assign num1 = instr_out;
-	always@(posedge btn_out[3])begin
+	always@(negedge btn_out[3])begin
 		if(SW == 5)
 			SW <= 0;
 		else
 			SW <= SW+1;
 	end
 	
-	always@(posedge btn_out[0] or posedge btn_out[1])begin
-		if(btn_out[1] == 1)begin
+	always@(negedge btn_out[0] or negedge btn_out[1])begin
+		if(btn_out[1] == 0)begin
 			clk_cnt <= 0;
 		end
 		else begin
