@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\users\ComputerArchitecture\Lab3\top.ncd
+OUTFILE=D:\users\ComputerArchitecture\Lab3\top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\users\ComputerArchitecture\Lab3
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

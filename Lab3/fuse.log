@@ -1,0 +1,40 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/users/ComputerArchitecture/Lab3/simulation_isim_beh.exe -prj D:/users/ComputerArchitecture/Lab3/simulation_beh.prj work.simulation work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab3/regs.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab3/alu.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab3/reg_wrapper.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab3/pcm.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab3/ipcore_dir/memory.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab3/ctrl.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab3/alu_wrap.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab3/Top.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/Lab3/simulation.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/Lab3/Top.v" Line 144: Size mismatch in connection of port <addra>. Formal port size is 9-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/Lab3/Top.v" Line 159: Size mismatch in connection of port <insn_stage>. Formal port size is 4-bit while actual signal size is 3-bit.
+WARNING:HDLCompiler:97 - "D:/users/ComputerArchitecture/Lab3/regs.v" Line 40: r6out was previously declared with a different range
+Completed static elaboration
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module memory
+Compiling module ctrl
+Compiling module pcm
+Compiling module regs
+Compiling module reg_wrapper
+Compiling module alu
+Compiling module alu_wrapper
+Compiling module top
+Compiling module simulation
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 14 Verilog Units
+Built simulation executable D:/users/ComputerArchitecture/Lab3/simulation_isim_beh.exe
+Fuse Memory Usage: 31196 KB
+Fuse CPU Usage: 421 ms

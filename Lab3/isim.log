@@ -1,0 +1,95 @@
+ISim log file
+Running: D:\users\ComputerArchitecture\Lab3\simulation_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/users/ComputerArchitecture/Lab3/simulation_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+WARNING: File "D:/users/ComputerArchitecture/Lab3/Top.v" Line 27.  For instance uut/x_memory/, width 9 of formal port addra is not equal to width 32 of actual signal waddr.
+WARNING: File "D:/users/ComputerArchitecture/Lab3/Top.v" Line 26.  For instance uut/x_memory/, width 9 of formal port addrb is not equal to width 32 of actual signal raddr.
+WARNING: File "D:/users/ComputerArchitecture/Lab3/Top.v" Line 55.  For instance uut/x_ctrl/, width 4 of formal port insn_stage is not equal to width 3 of actual signal insn_stage.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module simulation.uut.x_memory.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+blk_mem_gen_v7_3 collision detected at time: 349000, A write address: 16, B  read address: 16
+blk_mem_gen_v7_3 collision detected at time: 351000, A write address: 16, B  read address: 16
+blk_mem_gen_v7_3 collision detected at time: 353000, A write address: 16, B  read address: 16
+blk_mem_gen_v7_3 collision detected at time: 355000, A write address: 16, B  read address: 16
+blk_mem_gen_v7_3 collision detected at time: 357000, A write address: 16, B  read address: 7
+blk_mem_gen_v7_3 collision detected at time: 729000, A write address: 16, B  read address: 16
+blk_mem_gen_v7_3 collision detected at time: 731000, A write address: 16, B  read address: 16
+blk_mem_gen_v7_3 collision detected at time: 733000, A write address: 16, B  read address: 16
+blk_mem_gen_v7_3 collision detected at time: 735000, A write address: 16, B  read address: 16
+blk_mem_gen_v7_3 collision detected at time: 737000, A write address: 16, B  read address: 7
+# restart
+# run 10ns
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module simulation.uut.x_memory.inst.\native_mem_module.blk_mem_gen_v7_3_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+blk_mem_gen_v7_3 collision detected at time: 349000, A write address: 16, B  read address: 16
+# run 10ns
+blk_mem_gen_v7_3 collision detected at time: 351000, A write address: 16, B  read address: 16
+blk_mem_gen_v7_3 collision detected at time: 353000, A write address: 16, B  read address: 16
+blk_mem_gen_v7_3 collision detected at time: 355000, A write address: 16, B  read address: 16
+blk_mem_gen_v7_3 collision detected at time: 357000, A write address: 16, B  read address: 7
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
+# run 10ns
