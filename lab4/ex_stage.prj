@@ -1,0 +1,3 @@
+verilog work "Reg_ID_EXE.v"
+verilog work "imm2sa.v"
+verilog work "ex_stage.v"

@@ -93,68 +93,7 @@ module top(input wire CCLK, input wire [3:0]btn_in, output wire [7:0]LED, output
 		reg_c <= 0;
 	end
 
-	//wire [3:0]     lcdd;
-	//wire rslcd, rwlcd, elcd;
 
-/*
-	assign LCDDAT[3] = lcdd[3];
-	assign LCDDAT[2] = lcdd[2];
-	assign LCDDAT[1] = lcdd[1];
-	assign LCDDAT[0] = lcdd[0];
-	
-	assign LCDRS = rslcd;
-	assign LCDRW = rwlcd;
-	assign LCDE = elcd;
-	
-	initial begin
-		strdata = "01234567 01 01  0 1 2 01        ";
-	end
-	
-	display M0 (CCLK, cls, strdata, rslcd, rwlcd, elcd, lcdd);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-
-	always @(CCLK) begin
-		if ((BTN3 == 1'b1) || (mem_data != mem_data_old) || (pc != pc_old) || (raddr != raddr_old) || (waddr != waddr_old)) begin
-			strdata[255:248] = 8'h30 + mem_data[31:28];
-			strdata[247:240] = 8'h30 + mem_data[27:24];
-			strdata[239:232] = 8'h30 + mem_data[23:20];
-			strdata[231:224] = 8'h30 + mem_data[19:16];
-			strdata[223:216] = 8'h30 + mem_data[15:12];
-			strdata[215:208] = 8'h30 + mem_data[11:8];
-			strdata[207:200] = 8'h30 + mem_data[7:4];
-			strdata[199:192] = 8'h30 + mem_data[3:0];
-			//space
-			//strdata[191:184] = " ";
-			//2 4-bit raddr
-			strdata[183:176] = 8'h30 + raddr[7:4];
-			strdata[175:168] = 8'h30 + raddr[3:0];
-			//space
-			//strdata[167:160] = " ";
-			//2 4-bit waddr
-			strdata[159:152] = 8'h30 + waddr[7:4];
-			strdata[151:144] = 8'h30 + waddr[3:0];
-			
-			//secondline
-			strdata[127:120] = 8'h30 + state_out;
-			//space
-			strdata[111:104] = 8'h30 + insn_type;
-			//space
-			strdata[95:88] = 8'h30 + insn_code;
-			//space
-			//2 4-bit pc
-			strdata[79:72] = 8'h30 + pc[7:4];
-			strdata[71:64] = 8'h30 + pc[3:0];
-
-			cls = 1;
-			
-			pc_old <= pc;
-			mem_data_old <= mem_data;
-			raddr_old <= raddr;
-			waddr_old <= waddr;
-		end
-		else
-			cls = 0;
-	end
-*/
 	memory x_memory(CCLK,write_mem,waddr,b_data,CCLK,raddr,mem_data);   //改了clock 为 CCLK 也是为了仿真，实际下板子也许原来的写法也是可行的
 	/*
 		.addra(raddr),

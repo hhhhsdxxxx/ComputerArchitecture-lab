@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/instr_mem.v"
+verilog work "if_stage.v"

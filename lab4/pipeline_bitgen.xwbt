@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\users\ComputerArchitecture\lab4\pipeline.ncd
+OUTFILE=D:\users\ComputerArchitecture\lab4\pipeline.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=D:\users\ComputerArchitecture\lab4
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661
