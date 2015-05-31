@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to D:/users/ComputerArchitecture/lab4/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: id_stage.prj
 
@@ -43,17 +43,18 @@ Analyzing Verilog file "D:\users\ComputerArchitecture\lab4\regfile.v" into libra
 Parsing module <regfile>.
 Analyzing Verilog file "D:\users\ComputerArchitecture\lab4\ctrl_unit.v" into library work
 Parsing module <ctrl_unit>.
-ERROR:HDLCompiler:806 - "D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 140: Syntax error near ";".
-ERROR:HDLCompiler:806 - "D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 141: Syntax error near ";".
-ERROR:HDLCompiler:806 - "D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 144: Syntax error near "assign".
-ERROR:HDLCompiler:806 - "D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 148: Syntax error near ";".
-ERROR:HDLCompiler:598 - "D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 72: Module <ctrl_unit> ignored due to previous errors.
-Verilog file D:\users\ComputerArchitecture\lab4\ctrl_unit.v ignored due to errors
+Analyzing Verilog file "D:\users\ComputerArchitecture\lab4\id_stage.v" into library work
+Parsing module <id_stage>.
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.75 secs
+ 
 --> 
 
-Total memory usage is 184112 kilobytes
+Total memory usage is 184168 kilobytes
 
-Number of errors   :    5 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

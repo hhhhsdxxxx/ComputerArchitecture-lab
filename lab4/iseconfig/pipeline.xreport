@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-05-07T21:11:37</DateModified>
+  <DateModified>2015-05-31T16:24:09</DateModified>
   <ModuleName>pipeline</ModuleName>
-  <SummaryTimeStamp>2015-05-06T09:40:58</SummaryTimeStamp>
+  <SummaryTimeStamp>2015-05-31T16:16:18</SummaryTimeStamp>
   <SavedFilePath>D:/users/ComputerArchitecture/lab4/iseconfig/pipeline.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/users/ComputerArchitecture/lab4\</ImplementationReportsDirectory>
   <DateInitialized>2015-05-05T18:50:16</DateInitialized>

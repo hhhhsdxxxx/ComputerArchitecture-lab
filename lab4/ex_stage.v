@@ -19,7 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module ex_stage(clk,  rst, id_imm, id_inA, id_inB, id_wreg, id_m2reg, id_wmem, id_aluc, id_aluimm,id_shift, id_branch, id_pc4,id_regrt,id_rt,id_rd,
-	ex_wreg, ex_m2reg, ex_wmem, ex_aluR, ex_inB, ex_destR, ex_branch, ex_pc, ex_zero, ID_ins_type, ID_ins_number, EXE_ins_type, EXE_ins_number);
+	ex_wreg, ex_m2reg, ex_wmem, ex_aluR, ex_inB, ex_destR, ex_branch, ex_pc, ex_zero, ID_ins_type, ID_ins_number, EXE_ins_type, EXE_ins_number, ex_rt, stall);
 	input clk, rst;
 	input[31:0] id_imm;
 	input[31:0] id_inA;
@@ -33,6 +33,7 @@ module ex_stage(clk,  rst, id_imm, id_inA, id_inB, id_wreg, id_m2reg, id_wmem, i
 	input id_regrt;
 	input[4:0] id_rt;
 	input[4:0] id_rd;
+	input stall;
 	
 	input[3:0] ID_ins_type;
 	input[3:0] ID_ins_number;
@@ -49,7 +50,7 @@ module ex_stage(clk,  rst, id_imm, id_inA, id_inB, id_wreg, id_m2reg, id_wmem, i
 	output[31:0] ex_aluR;
 	output[31:0] ex_inB;
 	output[31:0] ex_pc;
-	output[4:0] ex_destR;
+	output[4:0] ex_destR, ex_rt;
 	
 	wire [3:0] ealuc;
 	wire ealuimm,eshift;
@@ -58,19 +59,18 @@ module ex_stage(clk,  rst, id_imm, id_inA, id_inB, id_wreg, id_m2reg, id_wmem, i
 	wire [31:0] ex_aluR;
 	wire [31:0] epc4;
 	wire e_regrt;
-	wire [4:0]e_rt;
-	wire [4:0]e_rd;
+	wire [4:0]e_rt, e_rd;
 
 	assign a_in = eshift ? sa : edata_a;
 	assign b_in = ealuimm ? odata_imm : edata_b;
 	assign ex_inB = edata_b;
-	assign ex_pc = epc4+odata_imm;
+	//assign ex_pc = epc4+odata_imm;
 	assign ex_zero = (ex_aluR==0)?1:0;
 	assign ex_destR = e_regrt? e_rt: e_rd; 
-	
+	assign ex_rt = e_rt;
 	Reg_ID_EXE	x_Reg_ID_EXE(clk, rst, id_wreg,id_m2reg,id_wmem,id_aluc,id_shift,id_aluimm, id_inA,id_inB,id_imm,id_branch,id_pc4,id_regrt,id_rt,id_rd,
 					ex_wreg,ex_m2reg,	ex_wmem,ealuc,	eshift, ealuimm, edata_a,edata_b, odata_imm, ex_branch, epc4,e_regrt,e_rt,e_rd,
-					ID_ins_type, ID_ins_number, EXE_ins_type, EXE_ins_number);
+					ID_ins_type, ID_ins_number, EXE_ins_type, EXE_ins_number, stall);
 	imm2sa x_imm2sa(odata_imm,sa);		
 	Alu x_Alu(a_in,b_in,ealuc,ex_aluR);
 endmodule

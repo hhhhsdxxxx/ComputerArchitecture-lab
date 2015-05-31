@@ -1,4 +1,4 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/users/ComputerArchitecture/lab4/test_isim_beh.exe -prj D:/users/ComputerArchitecture/lab4/test_beh.prj work.test work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/users/ComputerArchitecture/lab4/test2_isim_beh.exe -prj D:/users/ComputerArchitecture/lab4/test2_beh.prj work.test2 work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -15,13 +15,20 @@ Analyzing Verilog file "D:/users/ComputerArchitecture/lab4/mem_stage.v" into lib
 Analyzing Verilog file "D:/users/ComputerArchitecture/lab4/if_stage.v" into library work
 Analyzing Verilog file "D:/users/ComputerArchitecture/lab4/id_stage.v" into library work
 Analyzing Verilog file "D:/users/ComputerArchitecture/lab4/ex_stage.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/lab4/display.v" into library work
 Analyzing Verilog file "D:/users/ComputerArchitecture/lab4/pipeline.v" into library work
-Analyzing Verilog file "D:/users/ComputerArchitecture/lab4/test.v" into library work
+Analyzing Verilog file "D:/users/ComputerArchitecture/lab4/test2.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 171: Size mismatch in connection of port <cu_regrt>. Formal port size is 1-bit while actual signal size is 5-bit.
-WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 174: Size mismatch in connection of port <id_regrt>. Formal port size is 1-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 182: Size mismatch in connection of port <cu_regrt>. Formal port size is 1-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 184: Size mismatch in connection of port <ex_rt>. Formal port size is 5-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 186: Size mismatch in connection of port <id_regrt>. Formal port size is 1-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 188: Size mismatch in connection of port <ex_rt>. Formal port size is 5-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 191: Size mismatch in connection of port <mem_pc>. Formal port size is 32-bit while actual signal size is 1-bit.
 Completed static elaboration
+Compiling module clk_1ms
+Compiling module display
+Compiling module pbtn
 Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
 Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
 Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
@@ -43,11 +50,11 @@ Compiling module mem_stage
 Compiling module Reg_MEM_WB
 Compiling module wb_stage
 Compiling module pipeline
-Compiling module test
+Compiling module test2
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 5 sub-compilation(s) to finish...
-Compiled 23 Verilog Units
-Built simulation executable D:/users/ComputerArchitecture/lab4/test_isim_beh.exe
-Fuse Memory Usage: 32196 KB
-Fuse CPU Usage: 577 ms
+Waiting for 10 sub-compilation(s) to finish...
+Compiled 26 Verilog Units
+Built simulation executable D:/users/ComputerArchitecture/lab4/test2_isim_beh.exe
+Fuse Memory Usage: 32140 KB
+Fuse CPU Usage: 609 ms

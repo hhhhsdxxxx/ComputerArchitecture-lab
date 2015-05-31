@@ -1,0 +1,14 @@
+# Output products list for <instr_mem>
+_xmsgs\pn_parser.xmsgs
+instr_mem.asy
+instr_mem.gise
+instr_mem.mif
+instr_mem.ngc
+instr_mem.sym
+instr_mem.v
+instr_mem.veo
+instr_mem.xco
+instr_mem.xise
+instr_mem_flist.txt
+instr_mem_readme.txt
+instr_mem_xmdf.tcl

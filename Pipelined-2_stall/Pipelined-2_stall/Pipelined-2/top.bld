@@ -1,0 +1,45 @@
+Release 13.4 ngdbuild O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc top.ucf -p xc3s500e-fg320-4 top.ngc
+top.ngd
+
+Reading NGO file "D:/comeoncedifficult/Pipelined-2_stall/Pipelined-2/top.ngc"
+...
+Loading design module
+"D:\comeoncedifficult\Pipelined-2_stall\Pipelined-2/data_mem.ngc"...
+Loading design module
+"D:\comeoncedifficult\Pipelined-2_stall\Pipelined-2/instr_mem.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "top.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem - The Period constraint <NET	"CCLK"		PERIOD = 20.0ns HIGH
+   40%;> [top.ucf(6)], is specified using the Net Period method which is not
+   recommended. Please use the Timespec PERIOD method.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 165940 kilobytes
+
+Writing NGD file "top.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "top.bld"...

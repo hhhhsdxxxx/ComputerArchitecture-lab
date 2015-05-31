@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module Reg_ID_EXE(clk, 	rst, wreg,	m2reg, wmem, aluc, shift, aluimm,  data_a, data_b, data_imm, id_branch,id_pc4, id_regrt,id_rt,id_rd,//inputs
 								ewreg,em2reg,	ewmem,ealuc, eshift, ealuimm, odata_a,odata_b, odata_imm, e_branch, e_pc4,e_regrt,e_rt,e_rd,
-								ID_ins_type, ID_ins_number, EXE_ins_type, EXE_ins_number);	//outputs
+								ID_ins_type, ID_ins_number, EXE_ins_type, EXE_ins_number, stall);	//outputs
 	input		clk, rst;
 	input 	wreg,	m2reg,	wmem,	shift,	aluimm;
 	input [3:0] 	aluc;
@@ -32,7 +32,8 @@ module Reg_ID_EXE(clk, 	rst, wreg,	m2reg, wmem, aluc, shift, aluimm,  data_a, da
 	input [4:0]id_rd;
 	input[3:0] 	ID_ins_type;
 	input[3:0]	ID_ins_number;
-
+	input stall;
+	
 	output 	ewreg,	em2reg,	ewmem,	eshift,	ealuimm;
 	output [3:0] 	ealuc;
 	output [31:0]	odata_a,odata_b,odata_imm;
@@ -56,7 +57,7 @@ module Reg_ID_EXE(clk, 	rst, wreg,	m2reg, wmem, aluc, shift, aluimm,  data_a, da
 	reg [4:0]e_rd;
 	
 	always@(posedge clk or posedge rst) begin
-		if(rst)begin
+		if(rst==1 || stall==1)begin
 			ewreg <= 0;
 			em2reg <= 0;
 			ewmem <= 0;

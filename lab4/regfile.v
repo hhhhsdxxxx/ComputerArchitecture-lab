@@ -104,6 +104,13 @@ module regfile(clk, rst, raddr_A, raddr_B, waddr, wdata, we, rdata_A, rdata_B,
 
 	always @ (clk) begin		//when clk is changed
 		if	(clk == 0) begin				//when clk is low level
+		  if((raddr_A==waddr || raddr_B==waddr)&&we==1)begin
+			   if(raddr_A==waddr)
+					rdata_A <= wdata;
+				if(raddr_B==waddr)
+					rdata_B <= wdata;
+		  end
+		  else begin
 		  case(raddr_A)
 				5'b00000: rdata_A <= r0;
 				5'b00001: rdata_A <= r1;
@@ -143,6 +150,7 @@ module regfile(clk, rst, raddr_A, raddr_B, waddr, wdata, we, rdata_A, rdata_B,
 				5'b01111: rdata_B <= r15;
 				default:  rdata_B <= r0;
 			 endcase
+			 end
 		 end
 	end
 

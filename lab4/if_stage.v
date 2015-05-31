@@ -69,13 +69,14 @@
 `define	INST_TYPE_SRL	4'b1101
 `define	INST_TYPE_SRA	4'b1110
 `define	INST_TYPE_NONE	4'b1111
-module if_stage(clk, rst, npc, nid_pc, ctrl_branch, if_pc, if_pc4, if_inst, IF_ins_type,IF_ins_number,ID_ins_type,ID_ins_number);
+module if_stage(clk, rst, npc, nid_pc, ctrl_branch, if_pc, if_pc4, if_inst, IF_ins_type,IF_ins_number,ID_ins_type,ID_ins_number,stall,pc);
 				
 	input clk;
 	input rst;
 	input [31:0] npc;
 	input [31:0] nid_pc;
 	input ctrl_branch;
+	input stall;
 	
 	output [31:0] if_pc;
 	output [31:0] if_pc4;
@@ -84,6 +85,7 @@ module if_stage(clk, rst, npc, nid_pc, ctrl_branch, if_pc, if_pc4, if_inst, IF_i
 	output [3:0] IF_ins_type;
 	output [3:0] ID_ins_type;
 	output [3:0] ID_ins_number;
+	output [31:0] pc;
 	
 	wire clk;
 	wire rst;
@@ -96,6 +98,7 @@ module if_stage(clk, rst, npc, nid_pc, ctrl_branch, if_pc, if_pc4, if_inst, IF_i
 	reg run;
 	reg [3:0] ID_ins_type;
 	reg [3:0] ID_ins_number;
+	reg [31:0] finst;
 	
 	initial begin
 		pc[31:0] <= 32'hffff_ffff;
@@ -116,8 +119,10 @@ module if_stage(clk, rst, npc, nid_pc, ctrl_branch, if_pc, if_pc4, if_inst, IF_i
 			run <= 1'b0;
 		end
 		else begin
-			pc[31:0] <= npc[31:0];
-			run <= 1'b1;
+			if(!stall) begin
+				pc[31:0] <= npc[31:0];
+				run <= 1'b1;
+			end
 		end
 	end
 
@@ -195,5 +200,5 @@ module if_stage(clk, rst, npc, nid_pc, ctrl_branch, if_pc, if_pc4, if_inst, IF_i
 		end
 	end
 
-	instr_mem x_inst_mem(~clk,pc[7:0],inst_m);
+	instr_mem x_inst_mem(~clk|stall, pc[7:0], inst_m);
 endmodule

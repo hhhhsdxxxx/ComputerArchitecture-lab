@@ -70,13 +70,14 @@
 `define	INST_TYPE_SRA	4'b1110
 `define	INST_TYPE_NONE	4'b1111
 
-module ctrl_unit(clk, rst, if_instr, instr, cu_branch, cu_wreg, cu_m2reg, cu_wmem, cu_aluc, cu_shift, cu_aluimm, cu_sext,cu_regrt);
+module ctrl_unit(clk, rst, if_instr, instr, cu_branch, cu_wreg, cu_m2reg, cu_wmem, cu_aluc, cu_shift, cu_aluimm, cu_sext, cu_regrt, ex_m2reg, ex_rtt, stall);
 	
 	input clk;
 	input rst;
 	input [31:0] instr;
 	input [31:0] if_instr;
-	
+	input [4:0] ex_rtt;
+	input ex_m2reg;
 	output [1:0]cu_branch;
 	output cu_wreg;
 	output cu_m2reg;
@@ -86,6 +87,7 @@ module ctrl_unit(clk, rst, if_instr, instr, cu_branch, cu_wreg, cu_m2reg, cu_wme
 	output cu_aluimm;
 	output cu_sext;
 	output cu_regrt;
+	output stall;
 	
 	wire [5:0] func;
 	wire [5:0] opcode;
@@ -138,16 +140,17 @@ module ctrl_unit(clk, rst, if_instr, instr, cu_branch, cu_wreg, cu_m2reg, cu_wme
 	assign mem_op[5:0] = mem_instr[31:26];
 	assign wb_op[5:0] = wb_instr[31:26];
 	
-	assign cu_branch[0] = (opcode==`OP_BEQ)?1:0; //if instr type == BEQ then 1 else 0
-	assign cu_branch[1] = (opcode==`OP_BNE)?1:0;
+	assign cu_branch[0] = (opcode==`OP_BEQ || opcode==`OP_JMP)?1:0; //if instr type == BEQ then 1 else 0
+	assign cu_branch[1] = (opcode==`OP_BNE || opcode==`OP_JMP)?1:0;
 	assign cu_regrt = (opcode==`OP_ALUOp)?0:1; //if instr type = R type then 0 else 1;
-	assign cu_sext = (opcode==`OP_BEQ)?1:0;//when need to sign extend?
-	
-	assign cu_wreg = (opcode==`OP_ALUOp || cu_m2reg==1 || opcode==`OP_ADDI || opcode==`OP_ANDI || opcode==`OP_ORI)?1:0;//when need to write reg?
+	assign cu_sext = (opcode==`OP_BEQ || opcode==`OP_BNE || opcode==`OP_ADDI)?1:0;//when need to sign extend?
+	assign cu_wreg = ((opcode==`OP_ALUOp || cu_m2reg==1 || opcode==`OP_ADDI || opcode==`OP_ANDI || opcode==`OP_ORI) && instr!=0)?1:0;//when need to write reg?
 	assign cu_m2reg = (opcode==`OP_LW)?1:0;//when need to write mem to reg??
 	assign cu_wmem = (opcode==`OP_SW)?1:0;//when need to enable write mem?
 	assign cu_shift = ((opcode == `OP_ALUOp) && (func[5:2] == 4'b0))? 1 : 0;
 	assign cu_aluimm = (opcode != `OP_ALUOp && opcode != `OP_BNE && opcode != `OP_BEQ && opcode != `OP_JMP)?1:0;
+	assign stall = ex_m2reg?(cu_regrt?((rs==ex_rtt && rs!=0)?1:0):(((rs==ex_rtt&&rs!=0) || (rt==ex_rtt&&rt!=0))?1:0)):0;
+	
 	
 	always @ (posedge clk or posedge rst)
 		if(rst == 1)
@@ -172,12 +175,12 @@ module ctrl_unit(clk, rst, if_instr, instr, cu_branch, cu_wreg, cu_m2reg, cu_wme
 				`OP_ORI: begin
 					cu_aluc <= `ALU_OR;
 				end
-				`OP_BEQ: begin
-					cu_aluc <= `ALU_SUB;
-				end
-				`OP_BNE: begin
-					cu_aluc <= `ALU_SUB;
-				end
+//				`OP_BEQ: begin
+//					cu_aluc <= `ALU_SUB;
+//				end
+//				`OP_BNE: begin
+//					cu_aluc <= `ALU_SUB;
+//				end
 				`OP_ALUOp: begin
 					case(func)
 						`FUNC_ADD: begin

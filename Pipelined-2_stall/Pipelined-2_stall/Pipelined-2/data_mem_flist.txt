@@ -1,0 +1,15 @@
+# Output products list for <data_mem>
+data_mem.asy
+data_mem.gise
+data_mem.ise
+data_mem.mif
+data_mem.ngc
+data_mem.sym
+data_mem.v
+data_mem.veo
+data_mem.vhd
+data_mem.vho
+data_mem.xco
+data_mem.xise
+data_mem_flist.txt
+data_mem_xmdf.tcl

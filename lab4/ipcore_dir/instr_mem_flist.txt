@@ -1,4 +1,5 @@
 # Output products list for <instr_mem>
+_xmsgs\pn_parser.xmsgs
 instr_mem.asy
 instr_mem.gise
 instr_mem.mif
