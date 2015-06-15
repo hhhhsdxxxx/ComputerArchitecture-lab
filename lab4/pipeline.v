@@ -147,7 +147,8 @@ module pipeline(input wire CCLK, input wire [3:0]btn_in, output wire LED, output
 //			num[11:8]  <= ID_ins_number;
 //			num[7:4]   <= ID_ins_type;
 //			num[3:0]   <= 0;
-			num <= {3'b000,stall,3'b000,wb_wreg,wb_dest[23:0]};
+//			num <= {3'b000,branch,3'b000,wb_wreg,wb_dest[23:0]};
+			num <= {3'b000,id_rt[4:0],wb_dest[23:0]};
 		end
 		3'b100:
 		begin

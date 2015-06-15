@@ -10,7 +10,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Sun May 31 19:19:16 2015
+Mapped Date    : Thu Jun 04 19:42:15 2015
 
 Mapping design into LUTs...
 Running directed packing...
@@ -23,50 +23,50 @@ Total REAL time at the beginning of Placer: 4 secs
 Total CPU  time at the beginning of Placer: 4 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:3dd921b5) REAL time: 5 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:9145e35) REAL time: 5 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:3dd921b5) REAL time: 5 secs 
+Phase 2.7  Design Feasibility Check (Checksum:9145e35) REAL time: 5 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:3dd921b5) REAL time: 5 secs 
+Phase 3.31  Local Placement Optimization (Checksum:9145e35) REAL time: 5 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:7560ef59) REAL time: 7 secs 
+(Checksum:5d0ed8a7) REAL time: 7 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:7560ef59) REAL time: 7 secs 
+Phase 5.36  Local Placement Optimization (Checksum:5d0ed8a7) REAL time: 7 secs 
 
 Phase 6.30  Global Clock Region Assignment
-Phase 6.30  Global Clock Region Assignment (Checksum:7560ef59) REAL time: 7 secs 
+Phase 6.30  Global Clock Region Assignment (Checksum:5d0ed8a7) REAL time: 7 secs 
 
 Phase 7.3  Local Placement Optimization
-Phase 7.3  Local Placement Optimization (Checksum:7560ef59) REAL time: 7 secs 
+Phase 7.3  Local Placement Optimization (Checksum:5d0ed8a7) REAL time: 7 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:7560ef59) REAL time: 7 secs 
+Phase 8.5  Local Placement Optimization (Checksum:5d0ed8a7) REAL time: 7 secs 
 
 Phase 9.8  Global Placement
-....................
-.................................
-..............................................................................
-.....................................................................................................
-.........................
-Phase 9.8  Global Placement (Checksum:67e280fa) REAL time: 13 secs 
+..................
+..................................................
+...........................................................................................................................................................
+......................................................................................................
+........................
+Phase 9.8  Global Placement (Checksum:3abe565d) REAL time: 13 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:67e280fa) REAL time: 13 secs 
+Phase 10.5  Local Placement Optimization (Checksum:3abe565d) REAL time: 13 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:ee459096) REAL time: 21 secs 
+Phase 11.18  Placement Optimization (Checksum:95f888e0) REAL time: 22 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:ee459096) REAL time: 21 secs 
+Phase 12.5  Local Placement Optimization (Checksum:95f888e0) REAL time: 22 secs 
 
 Phase 13.34  Placement Validation
-Phase 13.34  Placement Validation (Checksum:f614ef4b) REAL time: 22 secs 
+Phase 13.34  Placement Validation (Checksum:e9f92406) REAL time: 22 secs 
 
 Total REAL time to Placer completion: 22 secs 
 Total CPU  time to Placer completion: 22 secs 
@@ -93,26 +93,26 @@ Slice Logic Utilization:
     Number used as Latches:                    100
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                      1,627 out of   5,720   28%
+  Number of Slice LUTs:                      1,626 out of   5,720   28%
     Number used as logic:                    1,617 out of   5,720   28%
-      Number using O6 output only:           1,419
+      Number using O6 output only:           1,421
       Number using O5 output only:              34
-      Number using O5 and O6:                  164
+      Number using O5 and O6:                  162
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
-    Number used exclusively as route-thrus:     10
-      Number with same-slice register load:      7
+    Number used exclusively as route-thrus:      9
+      Number with same-slice register load:      6
       Number with same-slice carry load:         3
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   651 out of   1,430   45%
+  Number of occupied Slices:                   633 out of   1,430   44%
   Number of MUXCYs used:                       200 out of   2,860    6%
-  Number of LUT Flip Flop pairs used:        2,185
-    Number with an unused Flip Flop:         1,174 out of   2,185   53%
-    Number with an unused LUT:                 558 out of   2,185   25%
-    Number of fully used LUT-FF pairs:         453 out of   2,185   20%
-    Number of unique control sets:              30
+  Number of LUT Flip Flop pairs used:        2,182
+    Number with an unused Flip Flop:         1,169 out of   2,182   53%
+    Number with an unused LUT:                 556 out of   2,182   25%
+    Number of fully used LUT-FF pairs:         457 out of   2,182   20%
+    Number of unique control sets:              28
     Number of slice register sites lost
       to control set restrictions:              43 out of  11,440    1%
 
@@ -151,9 +151,9 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                5.02
+Average Fanout of Non-Clock Nets:                5.00
 
-Peak Memory Usage:  449 MB
+Peak Memory Usage:  450 MB
 Total REAL time to MAP completion:  23 secs 
 Total CPU time to MAP completion:   23 secs 
 

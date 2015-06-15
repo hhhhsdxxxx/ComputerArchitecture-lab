@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -165,70 +165,69 @@ WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\if_stage.v" Line 13
 
 Elaborating module <instr_mem>.
 WARNING:HDLCompiler:1499 - "D:\users\ComputerArchitecture\lab4\ipcore_dir\instr_mem.v" Line 39: Empty module <instr_mem> remains a black box.
-WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 180: Assignment to IF_ins_type ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 181: Assignment to IF_ins_type ignored, since the identifier is never used
 
 Elaborating module <id_stage>.
 WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\lab4\id_stage.v" Line 99: Result of 32-bit expression is truncated to fit in 1-bit target.
 
 Elaborating module <regfile>.
 WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 107: Signal <raddr_A> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 108: Signal <raddr_A> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 109: Signal <wdata> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 110: Signal <raddr_B> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 111: Signal <wdata> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 114: Signal <raddr_A> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 115: Signal <r0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 116: Signal <r1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 117: Signal <r2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 118: Signal <r3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 119: Signal <r4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 120: Signal <r5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 121: Signal <r6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 122: Signal <r7> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 123: Signal <r8> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 124: Signal <r9> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 125: Signal <r10> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 126: Signal <r11> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 127: Signal <r12> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 128: Signal <r13> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 129: Signal <r14> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 130: Signal <r15> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 131: Signal <r0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 134: Signal <raddr_B> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 135: Signal <r0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 136: Signal <r1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 137: Signal <r2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 138: Signal <r3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 139: Signal <r4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 140: Signal <r5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 141: Signal <r6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 142: Signal <r7> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 143: Signal <r8> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 144: Signal <r9> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 145: Signal <r10> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 146: Signal <r11> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 147: Signal <r12> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 148: Signal <r13> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 149: Signal <r14> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 150: Signal <r15> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 151: Signal <r0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 160: Signal <r0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 161: Signal <r1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 162: Signal <r2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 163: Signal <r3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 164: Signal <r4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 165: Signal <r5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 166: Signal <r6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 167: Signal <r7> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 168: Signal <r8> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 169: Signal <r9> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 170: Signal <r10> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 171: Signal <r11> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 172: Signal <r12> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 173: Signal <r13> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 174: Signal <r14> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 175: Signal <r15> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 176: Signal <r0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 108: Signal <wdata> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 111: Signal <raddr_A> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 112: Signal <r0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 113: Signal <r1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 114: Signal <r2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 115: Signal <r3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 116: Signal <r4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 117: Signal <r5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 118: Signal <r6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 119: Signal <r7> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 120: Signal <r8> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 121: Signal <r9> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 122: Signal <r10> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 123: Signal <r11> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 124: Signal <r12> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 125: Signal <r13> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 126: Signal <r14> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 127: Signal <r15> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 128: Signal <r0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 131: Signal <raddr_B> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 132: Signal <wdata> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 135: Signal <raddr_B> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 136: Signal <r0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 137: Signal <r1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 138: Signal <r2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 139: Signal <r3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 140: Signal <r4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 141: Signal <r5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 142: Signal <r6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 143: Signal <r7> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 144: Signal <r8> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 145: Signal <r9> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 146: Signal <r10> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 147: Signal <r11> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 148: Signal <r12> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 149: Signal <r13> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 150: Signal <r14> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 151: Signal <r15> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 152: Signal <r0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 161: Signal <r0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 162: Signal <r1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 163: Signal <r2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 164: Signal <r3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 165: Signal <r4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 166: Signal <r5> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 167: Signal <r6> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 168: Signal <r7> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 169: Signal <r8> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 170: Signal <r9> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 171: Signal <r10> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 172: Signal <r11> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 173: Signal <r12> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 174: Signal <r13> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 175: Signal <r14> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 176: Signal <r15> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\users\ComputerArchitecture\lab4\regfile.v" Line 177: Signal <r0> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 
 Elaborating module <ctrl_unit>.
 WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 123: Assignment to rd ignored, since the identifier is never used
@@ -257,7 +256,7 @@ WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 
 WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 150: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 151: Result of 32-bit expression is truncated to fit in 1-bit target.
 WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 152: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:189 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 183: Size mismatch in connection of port <cu_regrt>. Formal port size is 1-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 184: Size mismatch in connection of port <cu_regrt>. Formal port size is 1-bit while actual signal size is 5-bit.
 
 Elaborating module <ex_stage>.
 WARNING:HDLCompiler:413 - "D:\users\ComputerArchitecture\lab4\ex_stage.v" Line 68: Result of 32-bit expression is truncated to fit in 1-bit target.
@@ -268,7 +267,7 @@ WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\lab4\ex_stage.v" Line 
 Elaborating module <imm2sa>.
 
 Elaborating module <Alu>.
-WARNING:HDLCompiler:189 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 187: Size mismatch in connection of port <id_regrt>. Formal port size is 1-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 188: Size mismatch in connection of port <id_regrt>. Formal port size is 1-bit while actual signal size is 5-bit.
 
 Elaborating module <mem_stage>.
 
@@ -276,13 +275,13 @@ Elaborating module <Reg_EXE_MEM>.
 
 Elaborating module <data_mem>.
 WARNING:HDLCompiler:1499 - "D:\users\ComputerArchitecture\lab4\ipcore_dir\data_mem.v" Line 39: Empty module <data_mem> remains a black box.
-WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 192: Assignment to mem_branch ignored, since the identifier is never used
-WARNING:HDLCompiler:189 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 192: Size mismatch in connection of port <mem_pc>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 193: Assignment to mem_branch ignored, since the identifier is never used
+WARNING:HDLCompiler:189 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 193: Size mismatch in connection of port <mem_pc>. Formal port size is 32-bit while actual signal size is 1-bit.
 
 Elaborating module <wb_stage>.
 
 Elaborating module <Reg_MEM_WB>.
-WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 196: Assignment to OUT_ins_type ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 197: Assignment to OUT_ins_type ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -290,12 +289,12 @@ WARNING:HDLCompiler:1127 - "D:\users\ComputerArchitecture\lab4\pipeline.v" Line 
 
 Synthesizing Unit <pipeline>.
     Related source file is "D:\users\ComputerArchitecture\lab4\pipeline.v".
-INFO:Xst:3210 - "D:\users\ComputerArchitecture\lab4\pipeline.v" line 179: Output port <IF_ins_type> of the instance <x_if_stage> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\users\ComputerArchitecture\lab4\pipeline.v" line 179: Output port <IF_ins_number> of the instance <x_if_stage> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\users\ComputerArchitecture\lab4\pipeline.v" line 191: Output port <mem_pc> of the instance <x_mem_stage> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\users\ComputerArchitecture\lab4\pipeline.v" line 191: Output port <mem_branch> of the instance <x_mem_stage> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\users\ComputerArchitecture\lab4\pipeline.v" line 195: Output port <WB_ins_type> of the instance <x_wb_stage> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\users\ComputerArchitecture\lab4\pipeline.v" line 195: Output port <WB_ins_number> of the instance <x_wb_stage> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\users\ComputerArchitecture\lab4\pipeline.v" line 180: Output port <IF_ins_type> of the instance <x_if_stage> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\users\ComputerArchitecture\lab4\pipeline.v" line 180: Output port <IF_ins_number> of the instance <x_if_stage> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\users\ComputerArchitecture\lab4\pipeline.v" line 192: Output port <mem_pc> of the instance <x_mem_stage> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\users\ComputerArchitecture\lab4\pipeline.v" line 192: Output port <mem_branch> of the instance <x_mem_stage> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\users\ComputerArchitecture\lab4\pipeline.v" line 196: Output port <WB_ins_type> of the instance <x_wb_stage> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\users\ComputerArchitecture\lab4\pipeline.v" line 196: Output port <WB_ins_number> of the instance <x_wb_stage> is unconnected or connected to loadless signal.
     Found 4-bit register for signal <sw>.
     Found 3-bit register for signal <mode>.
     Found 1-bit register for signal <num<31>>.
@@ -430,9 +429,9 @@ Synthesizing Unit <regfile>.
     Found 32-bit register for signal <r14>.
     Found 32-bit register for signal <r15>.
     Found 32-bit register for signal <r0>.
-    Found 32-bit 16-to-1 multiplexer for signal <_n0398> created at line 114.
-    Found 32-bit 16-to-1 multiplexer for signal <_n0431> created at line 134.
-    Found 32-bit 16-to-1 multiplexer for signal <_n0464> created at line 34.
+    Found 32-bit 16-to-1 multiplexer for signal <_n0393> created at line 111.
+    Found 32-bit 16-to-1 multiplexer for signal <_n0426> created at line 135.
+    Found 32-bit 16-to-1 multiplexer for signal <_n0459> created at line 34.
 WARNING:Xst:737 - Found 1-bit latch for signal <rdata_A<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <rdata_A<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <rdata_A<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -497,8 +496,8 @@ WARNING:Xst:737 - Found 1-bit latch for signal <rdata_B<3>>. Latches may be gene
 WARNING:Xst:737 - Found 1-bit latch for signal <rdata_B<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <rdata_B<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <rdata_B<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 5-bit comparator equal for signal <raddr_A[4]_waddr[4]_equal_72_o> created at line 107
-    Found 5-bit comparator equal for signal <raddr_B[4]_waddr[4]_equal_74_o> created at line 107
+    Found 5-bit comparator equal for signal <raddr_A[4]_waddr[4]_equal_69_o> created at line 107
+    Found 5-bit comparator equal for signal <raddr_B[4]_waddr[4]_equal_90_o> created at line 131
     Summary:
 	inferred 480 D-type flip-flop(s).
 	inferred  64 Latch(s).
@@ -943,15 +942,15 @@ Top Level Output File Name         : pipeline.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2417
+# BELS                             : 2415
 #      GND                         : 3
 #      INV                         : 7
 #      LUT1                        : 37
 #      LUT2                        : 139
-#      LUT3                        : 142
-#      LUT4                        : 148
-#      LUT5                        : 284
-#      LUT6                        : 994
+#      LUT3                        : 137
+#      LUT4                        : 151
+#      LUT5                        : 282
+#      LUT6                        : 996
 #      MUXCY                       : 191
 #      MUXF7                       : 193
 #      MUXF8                       : 92
@@ -966,7 +965,7 @@ Primitive and Black Box Usage:
 #      FDPE                        : 16
 #      FDR                         : 23
 #      LD                          : 36
-#      LDE_1                       : 64
+#      LD_1                        : 64
 # RAMS                             : 2
 #      RAMB8BWER                   : 2
 # Clock Buffers                    : 4
@@ -984,15 +983,15 @@ Selected Device : 6slx9tqg144-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:            1061  out of  11440     9%  
- Number of Slice LUTs:                 1751  out of   5720    30%  
-    Number used as Logic:              1751  out of   5720    30%  
+ Number of Slice LUTs:                 1749  out of   5720    30%  
+    Number used as Logic:              1749  out of   5720    30%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1930
-   Number with an unused Flip Flop:     869  out of   1930    45%  
-   Number with an unused LUT:           179  out of   1930     9%  
-   Number of fully used LUT-FF pairs:   882  out of   1930    45%  
-   Number of unique control sets:        30
+ Number of LUT Flip Flop pairs used:   1927
+   Number with an unused Flip Flop:     866  out of   1927    44%  
+   Number with an unused LUT:           178  out of   1927     9%  
+   Number of fully used LUT-FF pairs:   883  out of   1927    45%  
+   Number of unique control sets:        29
 
 IO Utilization: 
  Number of IOs:                          22
@@ -1058,7 +1057,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'p0/btn_out'
   Clock period: 18.427ns (frequency: 54.270MHz)
-  Total number of paths / destination ports: 29938684 / 1502
+  Total number of paths / destination ports: 29936700 / 1438
 -------------------------------------------------------------------------
 Delay:               9.213ns (Levels of Logic = 13)
   Source:            x_mem_stage/x_data_mem/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.WIDE_PRIM9.ram (RAM)
@@ -1081,7 +1080,7 @@ Delay:               9.213ns (Levels of Logic = 13)
      MUXCY:CI->O           1   0.023   0.000  x_id_stage/Msub_id_inA[31]_id_inB[31]_sub_9_OUT_cy<5> (x_id_stage/Msub_id_inA[31]_id_inB[31]_sub_9_OUT_cy<5>)
      XORCY:CI->O           1   0.206   1.137  x_id_stage/Msub_id_inA[31]_id_inB[31]_sub_9_OUT_xor<6> (x_id_stage/id_inA[31]_id_inB[31]_sub_9_OUT<6>)
      LUT6:I0->O            2   0.254   0.726  x_id_stage/id_inA[31]_GND_8_o_equal_10_o<31>6 (x_id_stage/id_inA[31]_GND_8_o_equal_10_o<31>5)
-     LUT4:I3->O            6   0.254   0.876  x_id_stage/id_inA[31]_GND_8_o_equal_10_o<31>2_SW0 (N295)
+     LUT4:I3->O            6   0.254   0.876  x_id_stage/id_inA[31]_GND_8_o_equal_10_o<31>2_SW0 (N289)
      LUT6:I5->O           19   0.254   1.261  x_id_stage/id_inA[31]_GND_8_o_equal_10_o<31>7 (x_id_stage/id_inA[31]_GND_8_o_equal_10_o)
      LUT6:I5->O            1   0.254   0.000  x_id_stage/wreg_rstpot (x_id_stage/wreg_rstpot)
      FDC:D                     0.074          x_id_stage/wreg
@@ -1091,10 +1090,10 @@ Delay:               9.213ns (Levels of Logic = 13)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'p2/btn_out'
-  Clock period: 3.847ns (frequency: 259.924MHz)
+  Clock period: 3.871ns (frequency: 258.361MHz)
   Total number of paths / destination ports: 12 / 6
 -------------------------------------------------------------------------
-Delay:               3.847ns (Levels of Logic = 1)
+Delay:               3.871ns (Levels of Logic = 1)
   Source:            mode_2 (FF)
   Destination:       mode_0 (FF)
   Source Clock:      p2/btn_out rising
@@ -1104,12 +1103,12 @@ Delay:               3.847ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             53   0.525   1.844  mode_2 (mode_2)
+     FDR:C->Q             56   0.525   1.868  mode_2 (mode_2)
      LUT2:I1->O            3   0.254   0.765  mode[2]_PWR_1_o_LessThan_12_o_inv1 (mode[2]_PWR_1_o_LessThan_12_o_inv)
      FDR:R                     0.459          mode_0
     ----------------------------------------
-    Total                      3.847ns (1.238ns logic, 2.609ns route)
-                                       (32.2% logic, 67.8% route)
+    Total                      3.871ns (1.238ns logic, 2.633ns route)
+                                       (32.0% logic, 68.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'p3/btn_out'
@@ -1157,10 +1156,10 @@ Delay:               2.795ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CCLK'
-  Clock period: 5.018ns (frequency: 199.283MHz)
+  Clock period: 4.667ns (frequency: 214.270MHz)
   Total number of paths / destination ports: 409 / 33
 -------------------------------------------------------------------------
-Delay:               5.018ns (Levels of Logic = 2)
+Delay:               4.667ns (Levels of Logic = 2)
   Source:            d0/c0/cnt_5 (FF)
   Destination:       d0/c0/cnt_15 (FF)
   Source Clock:      CCLK rising
@@ -1171,12 +1170,12 @@ Delay:               5.018ns (Levels of Logic = 2)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              2   0.525   1.181  d0/c0/cnt_5 (d0/c0/cnt_5)
-     LUT6:I0->O            1   0.254   1.137  d0/c0/GND_3_o_GND_3_o_equal_3_o<15>1 (d0/c0/GND_3_o_GND_3_o_equal_3_o<15>)
-     LUT6:I0->O           17   0.254   1.208  d0/c0/GND_3_o_GND_3_o_equal_3_o<15>3 (d0/c0/GND_3_o_GND_3_o_equal_3_o)
+     LUT6:I0->O            1   0.254   0.790  d0/c0/GND_3_o_GND_3_o_equal_3_o<15>1 (d0/c0/GND_3_o_GND_3_o_equal_3_o<15>)
+     LUT6:I4->O           17   0.250   1.208  d0/c0/GND_3_o_GND_3_o_equal_3_o<15>3 (d0/c0/GND_3_o_GND_3_o_equal_3_o)
      FDR:R                     0.459          d0/c0/cnt_0
     ----------------------------------------
-    Total                      5.018ns (1.492ns logic, 3.526ns route)
-                                       (29.7% logic, 70.3% route)
+    Total                      4.667ns (1.488ns logic, 3.179ns route)
+                                       (31.9% logic, 68.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'd0/c0/oclk'
@@ -1227,12 +1226,12 @@ Clock to Setup on destination clock CCLK
                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------------+---------+---------+---------+---------+
-CCLK                                      |    5.018|         |         |         |
+CCLK                                      |    4.667|         |         |         |
 p0/btn_out                                |   10.994|    5.198|         |         |
-p2/btn_out                                |    4.408|         |         |         |
+p2/btn_out                                |    4.432|         |         |         |
 p3/btn_out                                |    6.253|         |         |         |
 x_ex_stage/x_Alu/aluc[3]_PWR_23_o_Mux_17_o|         |    4.569|         |         |
-x_if_stage/clk_stall_OR_61_o              |    4.448|         |         |         |
+x_if_stage/clk_stall_OR_61_o              |    4.449|         |         |         |
 ------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock d0/c0/oclk
@@ -1250,7 +1249,7 @@ Clock to Setup on destination clock p0/btn_out
 Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------------+---------+---------+---------+---------+
 d0/c0/oclk                                |    3.537|         |    3.537|         |
-p0/btn_out                                |   15.480|    9.213|    4.669|         |
+p0/btn_out                                |   15.480|    9.213|    4.264|         |
 x_ex_stage/x_Alu/aluc[3]_PWR_23_o_Mux_17_o|         |    9.038|         |         |
 x_id_stage/x_ctrl_unit/_n0470             |         |    1.695|         |         |
 x_if_stage/clk_stall_OR_61_o              |    5.970|         |         |         |
@@ -1261,7 +1260,7 @@ Clock to Setup on destination clock p2/btn_out
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-p2/btn_out     |    3.847|         |         |         |
+p2/btn_out     |    3.871|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock p3/btn_out
@@ -1299,14 +1298,14 @@ p0/btn_out     |    1.765|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.71 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.49 secs
  
 --> 
 
-Total memory usage is 259296 kilobytes
+Total memory usage is 259264 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  287 (   0 filtered)
+Number of warnings :  286 (   0 filtered)
 Number of infos    :   34 (   0 filtered)
 
