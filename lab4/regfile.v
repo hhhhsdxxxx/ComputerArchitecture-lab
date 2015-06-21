@@ -19,14 +19,16 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module regfile(clk, rst, raddr_A, raddr_B, waddr, wdata, we, rdata_A, rdata_B,
-	which_reg, reg_content);           
+	which_reg, reg_content, cu_jal, address);           
 	input clk;
 	input rst;
 	input [4:0] raddr_A;
 	input [4:0] raddr_B;
 	input [4:0] waddr;
 	input [31:0] wdata;
+	input [31:0] address;
 	input we;
+	input cu_jal;
 	output [31:0] rdata_A;
 	output [31:0] rdata_B;
 	
@@ -59,7 +61,10 @@ module regfile(clk, rst, raddr_A, raddr_B, waddr, wdata, we, rdata_A, rdata_B,
 	reg [31:0] r13;
 	reg [31:0] r14;
 	reg [31:0] r15;
-
+	reg [31:0] r16;
+	always @ (posedge cu_jal)begin
+		r15 <= address;
+	end
 	always @ (negedge clk or posedge rst) begin		
 		if (rst == 1) begin		//reset is triggered
 			r0 <= 0;
@@ -77,7 +82,7 @@ module regfile(clk, rst, raddr_A, raddr_B, waddr, wdata, we, rdata_A, rdata_B,
 			r12 <= 0;
 			r13 <= 0;
 			r14 <= 0;
-			r15 <= 0;
+			//r15 <= 0;
 		end
 		else if (we == 1) begin		//write register when we is high level
 			case (waddr)
@@ -96,7 +101,7 @@ module regfile(clk, rst, raddr_A, raddr_B, waddr, wdata, we, rdata_A, rdata_B,
 				5'b01100: r12 <= wdata;
 				5'b01101: r13 <= wdata;
 				5'b01110: r14 <= wdata;
-				5'b01111: r15 <= wdata;
+				//5'b01111: r15 <= wdata;
 				default:  r0 <= 0;
 			endcase
 		end

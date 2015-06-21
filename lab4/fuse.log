@@ -20,11 +20,9 @@ Analyzing Verilog file "D:/users/ComputerArchitecture/lab4/pipeline.v" into libr
 Analyzing Verilog file "D:/users/ComputerArchitecture/lab4/test2.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 182: Size mismatch in connection of port <cu_regrt>. Formal port size is 1-bit while actual signal size is 5-bit.
-WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 184: Size mismatch in connection of port <ex_rt>. Formal port size is 5-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 186: Size mismatch in connection of port <id_regrt>. Formal port size is 1-bit while actual signal size is 5-bit.
-WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 188: Size mismatch in connection of port <ex_rt>. Formal port size is 5-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 191: Size mismatch in connection of port <mem_pc>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 184: Size mismatch in connection of port <cu_regrt>. Formal port size is 1-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 188: Size mismatch in connection of port <id_regrt>. Formal port size is 1-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "D:/users/ComputerArchitecture/lab4/pipeline.v" Line 193: Size mismatch in connection of port <mem_pc>. Formal port size is 32-bit while actual signal size is 1-bit.
 Completed static elaboration
 Compiling module clk_1ms
 Compiling module display
@@ -53,8 +51,8 @@ Compiling module pipeline
 Compiling module test2
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 10 sub-compilation(s) to finish...
+Waiting for 2 sub-compilation(s) to finish...
 Compiled 26 Verilog Units
 Built simulation executable D:/users/ComputerArchitecture/lab4/test2_isim_beh.exe
-Fuse Memory Usage: 32140 KB
-Fuse CPU Usage: 609 ms
+Fuse Memory Usage: 32152 KB
+Fuse CPU Usage: 530 ms

@@ -176,14 +176,14 @@ module pipeline(input wire CCLK, input wire [3:0]btn_in, output wire LED, output
 	
 	assign pc [31:0] = if_npc[31:0];
 	assign rst = btn[1];
-//	assign rst = btn_in[1];
+	//assign rst = btn_in[1];
 	if_stage x_if_stage(clk, rst, pc, branch_pc, branch, 
 	  if_npc, if_pc4, if_inst, IF_ins_type, IF_ins_number, ID_ins_type, ID_ins_number, stall, ppc);
 
 	id_stage x_id_stage(clk, rst, if_inst, if_pc4, wb_destR, wb_dest,wb_wreg, 
 		id_wreg, id_m2reg, id_wmem, id_aluc, id_shift, id_aluimm, id_branch, id_pc4, id_inA, id_inB, id_imm, id_regrt,id_rt,id_rd, 
 		ID_ins_type, ID_ins_number, EX_ins_type, EX_ins_number, {1'b0,which_reg}, reg_content, 
-		branch_pc, branch, ex_m2reg, ex_rt, stall, mem_m2reg, mem_destR, mem_mdata, ex_wreg&(~mem_m2reg), dest, ex_aluR);
+		branch_pc, branch, ex_m2reg, ex_rt, stall, mem_m2reg, mem_destR, mem_mdata, ex_wreg&(~ex_m2reg), dest, ex_aluR);
 		
 	ex_stage x_ex_stage(clk, rst,id_imm, id_inA, id_inB, id_wreg, id_m2reg, id_wmem, id_aluc, id_aluimm,id_shift, id_branch, id_pc4,id_regrt,id_rt,id_rd,
 	  ex_wreg, ex_m2reg, ex_wmem, ex_aluR, ex_inB, ex_destR, ex_branch, ex_pc, ex_zero, 

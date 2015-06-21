@@ -1,12 +1,12 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Jun 04 19:43:06 2015
+Sun Jun 21 16:14:51 2015
 
 drc -z pipeline.ncd pipeline.pcf
 
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   x_id_stage/x_ctrl_unit/_n0470 is sourced by a combinatorial pin. This is not
+   x_id_stage/x_ctrl_unit/_n0680 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs

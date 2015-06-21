@@ -22,8 +22,10 @@
 `define ALU_SUB		4'b0010
 `define ALU_AND		4'b0100
 `define ALU_OR			4'b0101
+`define ALU_XOR		4'b0110
 `define ALU_NOR		4'b0111 
 `define ALU_SLT		4'b1000
+`define ALU_SLTU		4'b1001
 `define ALU_SLL		4'b1100
 `define ALU_SRL		4'b1101
 `define ALU_SRA		4'b1111
@@ -46,11 +48,13 @@ always@(op1 or op2 or aluc)begin
 	`ALU_SUB: o_alu <= op1-op2;
 	`ALU_AND: o_alu <= op1&op2;
 	`ALU_OR:  o_alu <= op1|op2;
+	`ALU_XOR:  o_alu <= op1^op2;
 	`ALU_NOR: o_alu <= ~(op1|op2);
-	`ALU_SLT: o_alu <= (op1<op2)?1:0;
-	`ALU_SLL: o_alu <= op1 << op2;
-	`ALU_SRL: o_alu <= op1 >> op2;
-	`ALU_SRA: o_alu <= op1[31]?((32'hffff_ffff<<(32-op2))|op1>>op2):(op1>>op2);
+	`ALU_SLT: o_alu <= (op1[31]&(~op2[31]))?1:(((~op1[31])&op2[31])?0:(op1<op2?1:0));
+	`ALU_SLTU: o_alu <= (op1<op2)?1:0;
+	`ALU_SLL: o_alu <= op2 << op1;
+	`ALU_SRL: o_alu <= op2 >> op1;
+	`ALU_SRA: o_alu <= op2[31]?((32'hffff_ffff<<(32-op1))|op2>>op1):(op2>>op1);
 	endcase
 end
 

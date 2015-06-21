@@ -1,0 +1,28 @@
+Command line:
+   pipeline_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51565
+
+Sun Jun 21 15:39:04 2015
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 1017.64 Meg
+
+ Total Signals          : 643
+ Total Nets             : 2723
+ Total Signal Drivers   : 257
+ Total Blocks           : 58
+ Total Primitive Blocks : 41
+ Total Processes        : 317
+ Total Traceable Variables  : 751
+ Total Scalar Nets and Variables : 58977
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 703.021 Meg
+
+Sun Jun 21 15:40:30 2015
+

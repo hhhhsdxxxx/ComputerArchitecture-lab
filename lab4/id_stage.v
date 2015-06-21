@@ -64,7 +64,7 @@ module id_stage(clk, rst, if_inst, if_pc4, wb_destR, wb_dest,wb_wreg,
 	output[3:0] ID_ins_number;
 	output stall;
 	
-	
+	wire cu_lui;
 	wire cu_sext;
 	wire cu_regrt;
 	wire [1:0]cu_branch;
@@ -82,6 +82,8 @@ module id_stage(clk, rst, if_inst, if_pc4, wb_destR, wb_dest,wb_wreg,
 	wire [31:0] id_imm;
 	wire zero;
 	wire [31:0] id_pc4;
+	wire [31:0] address;
+	wire cu_jal;
 	reg[3:0] ID_ins_type;
 	reg[3:0] ID_ins_number;
 	wire [31:0] jmp_address;
@@ -94,12 +96,12 @@ module id_stage(clk, rst, if_inst, if_pc4, wb_destR, wb_dest,wb_wreg,
 	assign rd = reg_inst[15:11];
 	assign rs = reg_inst[25:21];
 	assign jmp_address = {6'b000000,reg_inst[25:0]};
-	assign id_imm = cu_sext?(imm[15]?{16'hffff,imm}:{16'b0,imm}):{16'b0,imm};   //·ûºÅÀ©Õ¹
-	assign jump_target = (cu_branch==2'b11)?jmp_address:(id_imm+pc4);
+	assign id_imm = cu_sext?(imm[15]?{16'hffff,imm}:{16'b0,imm}):(cu_lui?{imm,16'h0000}:{16'b0,imm});   //·ûºÅÀ©Õ¹
+	assign jump_target = (cu_branch==2'b11)?(cu_jr?id_inA:jmp_address):(id_imm+pc4);
 	assign zero=((id_inA-id_inB)==0)?1:0;
 	assign branch = (cu_branch[0]&zero) | (cu_branch[1]&(~zero));  //Ìø×ª²Û±êÖ¾
 	assign id_pc4 = pc4;
-	
+	assign address = pc4;
 	//assign stall = ((rt!=0 && rt==id_rt)||(rs!=0 && rs==id_rt))?1:0;
 	
 	always @ (posedge clk or posedge rst) begin
@@ -128,8 +130,8 @@ module id_stage(clk, rst, if_inst, if_pc4, wb_destR, wb_dest,wb_wreg,
 		
 	end
 	
-	regfile x_regfile(clk, rst, reg_inst[25:21], reg_inst[20:16], wb_destR, wb_dest, wb_wreg, rdata_A, rdata_B, which_reg, reg_content);
-	ctrl_unit x_ctrl_unit(clk, rst, if_inst[31:0], reg_inst[31:0],cu_branch, cu_wreg, cu_m2reg, cu_wmem, cu_aluc, cu_shift, cu_aluimm, cu_sext,cu_regrt, ex_m2reg, ex_rt, stall);
+	regfile x_regfile(clk, rst, reg_inst[25:21], reg_inst[20:16], wb_destR, wb_dest, wb_wreg, rdata_A, rdata_B, which_reg, reg_content, cu_jal, address);
+	ctrl_unit x_ctrl_unit(clk, rst, if_inst[31:0], reg_inst[31:0],cu_branch, cu_wreg, cu_m2reg, cu_wmem, cu_aluc, cu_shift, cu_aluimm, cu_sext,cu_regrt, ex_m2reg, ex_rt, cu_lui, cu_jr, cu_jal, stall);
 	assign eq_regrs1 = wreg1&(rs==reg_desk1&&rs!=0);
 	assign eq_regrt1 = wreg1&(rt==reg_desk1&&rt!=0);
 	assign eq_regrs2 = wreg&(rs==desk&&rs!=0);

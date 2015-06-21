@@ -5,19 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/users/ComputerArchitecture/lab4/pipeline.v" Line 182: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">cu_regrt</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/users/ComputerArchitecture/lab4/pipeline.v" Line 184: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">cu_regrt</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/users/ComputerArchitecture/lab4/pipeline.v" Line 184: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">ex_rt</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/users/ComputerArchitecture/lab4/pipeline.v" Line 188: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">id_regrt</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/users/ComputerArchitecture/lab4/pipeline.v" Line 186: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">id_regrt</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/users/ComputerArchitecture/lab4/pipeline.v" Line 188: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">ex_rt</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/users/ComputerArchitecture/lab4/pipeline.v" Line 191: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">mem_pc</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"D:/users/ComputerArchitecture/lab4/pipeline.v" Line 193: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">mem_pc</arg>&gt;. Formal port size is <arg fmt="%d" index="2">32</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
 </msg>
 
 </messages>

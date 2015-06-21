@@ -5,6 +5,12 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLCompiler" num="572" delta="old" >"D:\users\ComputerArchitecture\lab4\Alu.v" Line 25: Macro &lt;<arg fmt="%s" index="1">ALU_XOR</arg>&gt; is redefined.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="572" delta="old" >"D:\users\ComputerArchitecture\lab4\Alu.v" Line 26: Macro &lt;<arg fmt="%s" index="1">ALU_NOR</arg>&gt; is redefined.
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\display.v" Line 107: Result of <arg fmt="%d" index="1">17</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">16</arg>-bit target.
 </msg>
 
@@ -35,256 +41,256 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\pipeline.v" Line 181: Assignment to <arg fmt="%s" index="1">IF_ins_type</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\id_stage.v" Line 99: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\id_stage.v" Line 101: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 107: Signal &lt;<arg fmt="%s" index="1">raddr_A</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 112: Signal &lt;<arg fmt="%s" index="1">raddr_A</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 108: Signal &lt;<arg fmt="%s" index="1">wdata</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 113: Signal &lt;<arg fmt="%s" index="1">wdata</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 111: Signal &lt;<arg fmt="%s" index="1">raddr_A</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 116: Signal &lt;<arg fmt="%s" index="1">raddr_A</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 112: Signal &lt;<arg fmt="%s" index="1">r0</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 117: Signal &lt;<arg fmt="%s" index="1">r0</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 113: Signal &lt;<arg fmt="%s" index="1">r1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 118: Signal &lt;<arg fmt="%s" index="1">r1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 114: Signal &lt;<arg fmt="%s" index="1">r2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 119: Signal &lt;<arg fmt="%s" index="1">r2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 115: Signal &lt;<arg fmt="%s" index="1">r3</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 120: Signal &lt;<arg fmt="%s" index="1">r3</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 116: Signal &lt;<arg fmt="%s" index="1">r4</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 121: Signal &lt;<arg fmt="%s" index="1">r4</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 117: Signal &lt;<arg fmt="%s" index="1">r5</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 122: Signal &lt;<arg fmt="%s" index="1">r5</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 118: Signal &lt;<arg fmt="%s" index="1">r6</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 123: Signal &lt;<arg fmt="%s" index="1">r6</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 119: Signal &lt;<arg fmt="%s" index="1">r7</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 124: Signal &lt;<arg fmt="%s" index="1">r7</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 120: Signal &lt;<arg fmt="%s" index="1">r8</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 125: Signal &lt;<arg fmt="%s" index="1">r8</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 121: Signal &lt;<arg fmt="%s" index="1">r9</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 126: Signal &lt;<arg fmt="%s" index="1">r9</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 122: Signal &lt;<arg fmt="%s" index="1">r10</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 127: Signal &lt;<arg fmt="%s" index="1">r10</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 123: Signal &lt;<arg fmt="%s" index="1">r11</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 128: Signal &lt;<arg fmt="%s" index="1">r11</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 124: Signal &lt;<arg fmt="%s" index="1">r12</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 129: Signal &lt;<arg fmt="%s" index="1">r12</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 125: Signal &lt;<arg fmt="%s" index="1">r13</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 130: Signal &lt;<arg fmt="%s" index="1">r13</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 126: Signal &lt;<arg fmt="%s" index="1">r14</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 131: Signal &lt;<arg fmt="%s" index="1">r14</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 127: Signal &lt;<arg fmt="%s" index="1">r15</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 132: Signal &lt;<arg fmt="%s" index="1">r15</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 128: Signal &lt;<arg fmt="%s" index="1">r0</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 133: Signal &lt;<arg fmt="%s" index="1">r0</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 131: Signal &lt;<arg fmt="%s" index="1">raddr_B</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 136: Signal &lt;<arg fmt="%s" index="1">raddr_B</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 132: Signal &lt;<arg fmt="%s" index="1">wdata</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 137: Signal &lt;<arg fmt="%s" index="1">wdata</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 135: Signal &lt;<arg fmt="%s" index="1">raddr_B</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 140: Signal &lt;<arg fmt="%s" index="1">raddr_B</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 136: Signal &lt;<arg fmt="%s" index="1">r0</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 141: Signal &lt;<arg fmt="%s" index="1">r0</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 137: Signal &lt;<arg fmt="%s" index="1">r1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 142: Signal &lt;<arg fmt="%s" index="1">r1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 138: Signal &lt;<arg fmt="%s" index="1">r2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 143: Signal &lt;<arg fmt="%s" index="1">r2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 139: Signal &lt;<arg fmt="%s" index="1">r3</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 144: Signal &lt;<arg fmt="%s" index="1">r3</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 140: Signal &lt;<arg fmt="%s" index="1">r4</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 145: Signal &lt;<arg fmt="%s" index="1">r4</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 141: Signal &lt;<arg fmt="%s" index="1">r5</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 146: Signal &lt;<arg fmt="%s" index="1">r5</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 142: Signal &lt;<arg fmt="%s" index="1">r6</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 147: Signal &lt;<arg fmt="%s" index="1">r6</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 143: Signal &lt;<arg fmt="%s" index="1">r7</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 148: Signal &lt;<arg fmt="%s" index="1">r7</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 144: Signal &lt;<arg fmt="%s" index="1">r8</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 149: Signal &lt;<arg fmt="%s" index="1">r8</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 145: Signal &lt;<arg fmt="%s" index="1">r9</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 150: Signal &lt;<arg fmt="%s" index="1">r9</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 146: Signal &lt;<arg fmt="%s" index="1">r10</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 151: Signal &lt;<arg fmt="%s" index="1">r10</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 147: Signal &lt;<arg fmt="%s" index="1">r11</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 152: Signal &lt;<arg fmt="%s" index="1">r11</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 148: Signal &lt;<arg fmt="%s" index="1">r12</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 153: Signal &lt;<arg fmt="%s" index="1">r12</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 149: Signal &lt;<arg fmt="%s" index="1">r13</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 154: Signal &lt;<arg fmt="%s" index="1">r13</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 150: Signal &lt;<arg fmt="%s" index="1">r14</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 155: Signal &lt;<arg fmt="%s" index="1">r14</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 151: Signal &lt;<arg fmt="%s" index="1">r15</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 156: Signal &lt;<arg fmt="%s" index="1">r15</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 152: Signal &lt;<arg fmt="%s" index="1">r0</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 157: Signal &lt;<arg fmt="%s" index="1">r0</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 161: Signal &lt;<arg fmt="%s" index="1">r0</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 166: Signal &lt;<arg fmt="%s" index="1">r0</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 162: Signal &lt;<arg fmt="%s" index="1">r1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 167: Signal &lt;<arg fmt="%s" index="1">r1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 163: Signal &lt;<arg fmt="%s" index="1">r2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 168: Signal &lt;<arg fmt="%s" index="1">r2</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 164: Signal &lt;<arg fmt="%s" index="1">r3</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 169: Signal &lt;<arg fmt="%s" index="1">r3</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 165: Signal &lt;<arg fmt="%s" index="1">r4</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 170: Signal &lt;<arg fmt="%s" index="1">r4</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 166: Signal &lt;<arg fmt="%s" index="1">r5</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 171: Signal &lt;<arg fmt="%s" index="1">r5</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 167: Signal &lt;<arg fmt="%s" index="1">r6</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 172: Signal &lt;<arg fmt="%s" index="1">r6</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 168: Signal &lt;<arg fmt="%s" index="1">r7</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 173: Signal &lt;<arg fmt="%s" index="1">r7</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 169: Signal &lt;<arg fmt="%s" index="1">r8</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 174: Signal &lt;<arg fmt="%s" index="1">r8</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 170: Signal &lt;<arg fmt="%s" index="1">r9</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 175: Signal &lt;<arg fmt="%s" index="1">r9</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 171: Signal &lt;<arg fmt="%s" index="1">r10</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 176: Signal &lt;<arg fmt="%s" index="1">r10</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 172: Signal &lt;<arg fmt="%s" index="1">r11</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 177: Signal &lt;<arg fmt="%s" index="1">r11</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 173: Signal &lt;<arg fmt="%s" index="1">r12</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 178: Signal &lt;<arg fmt="%s" index="1">r12</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 174: Signal &lt;<arg fmt="%s" index="1">r13</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 179: Signal &lt;<arg fmt="%s" index="1">r13</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 175: Signal &lt;<arg fmt="%s" index="1">r14</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 180: Signal &lt;<arg fmt="%s" index="1">r14</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 176: Signal &lt;<arg fmt="%s" index="1">r15</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 181: Signal &lt;<arg fmt="%s" index="1">r15</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 177: Signal &lt;<arg fmt="%s" index="1">r0</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\users\ComputerArchitecture\lab4\regfile.v" Line 182: Signal &lt;<arg fmt="%s" index="1">r0</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 123: Assignment to <arg fmt="%s" index="1">rd</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 141: Assignment to <arg fmt="%s" index="1">rd</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 126: Assignment to <arg fmt="%s" index="1">if_opcode</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 144: Assignment to <arg fmt="%s" index="1">if_opcode</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 127: Assignment to <arg fmt="%s" index="1">if_rs</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 145: Assignment to <arg fmt="%s" index="1">if_rs</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 128: Assignment to <arg fmt="%s" index="1">if_rt</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 146: Assignment to <arg fmt="%s" index="1">if_rt</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 129: Assignment to <arg fmt="%s" index="1">if_rd</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 147: Assignment to <arg fmt="%s" index="1">if_rd</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 130: Assignment to <arg fmt="%s" index="1">if_func</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 148: Assignment to <arg fmt="%s" index="1">if_func</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 132: Assignment to <arg fmt="%s" index="1">ex_rs</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 150: Assignment to <arg fmt="%s" index="1">ex_rs</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 133: Assignment to <arg fmt="%s" index="1">ex_rt</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 151: Assignment to <arg fmt="%s" index="1">ex_rt</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 134: Assignment to <arg fmt="%s" index="1">ex_rd</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 152: Assignment to <arg fmt="%s" index="1">ex_rd</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 135: Assignment to <arg fmt="%s" index="1">mem_rt</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 153: Assignment to <arg fmt="%s" index="1">mem_rt</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 136: Assignment to <arg fmt="%s" index="1">mem_rd</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 154: Assignment to <arg fmt="%s" index="1">mem_rd</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 137: Assignment to <arg fmt="%s" index="1">wb_rd</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 155: Assignment to <arg fmt="%s" index="1">wb_rd</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 138: Assignment to <arg fmt="%s" index="1">wb_rt</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 156: Assignment to <arg fmt="%s" index="1">wb_rt</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 139: Assignment to <arg fmt="%s" index="1">ex_op</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 157: Assignment to <arg fmt="%s" index="1">ex_op</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 140: Assignment to <arg fmt="%s" index="1">mem_op</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 158: Assignment to <arg fmt="%s" index="1">mem_op</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 141: Assignment to <arg fmt="%s" index="1">wb_op</arg> ignored, since the identifier is never used
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 159: Assignment to <arg fmt="%s" index="1">wb_op</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 143: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 161: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 144: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 162: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 145: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 163: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 146: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 164: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 147: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 166: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 148: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 168: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 149: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 169: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 150: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 170: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 151: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 171: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 152: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"D:\users\ComputerArchitecture\lab4\ctrl_unit.v" Line 172: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="189" delta="old" >"D:\users\ComputerArchitecture\lab4\pipeline.v" Line 184: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">cu_regrt</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">5</arg>-bit.
@@ -662,102 +668,6 @@
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">mpc_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Reg_EXE_MEM</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_if_stage/pc_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_31</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_30</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_29</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_28</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_27</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_26</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_id_stage/pc4_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
-</msg>
-
 <msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">x_ex_stage/x_Reg_ID_EXE/e_branch_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">pipeline</arg>&gt;.
 </msg>
 
@@ -942,24 +852,6 @@
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">d0/c0/cnt_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pipeline</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;p3/c1/cnt_9&gt; &lt;p2/c1/cnt_9&gt; &lt;p1/c1/cnt_9&gt; &lt;p0/c1/cnt_9&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">x_ex_stage/x_Reg_ID_EXE/e_rd_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pipeline</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_11&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">x_ex_stage/x_Reg_ID_EXE/e_rd_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pipeline</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_12&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">x_ex_stage/x_Reg_ID_EXE/e_rd_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pipeline</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_13&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">x_ex_stage/x_Reg_ID_EXE/e_rd_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pipeline</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_14&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">x_ex_stage/x_Reg_ID_EXE/e_rd_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pipeline</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_15&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">x_ex_stage/x_Reg_ID_EXE/odata_imm_31</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pipeline</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">15 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_30&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_29&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_28&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_27&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_26&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_25&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_24&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_23&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_22&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_21&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_20&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_19&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_18&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_17&gt; &lt;x_ex_stage/x_Reg_ID_EXE/odata_imm_16&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
